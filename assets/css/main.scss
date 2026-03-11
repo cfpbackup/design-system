@@ -3,8 +3,8 @@
    ========================================================================== */
 
 // Import Design System packages.
-@use '@cfpb/cfpb-design-system/src/abstracts' as *;
-@use '@cfpb/cfpb-design-system/src/base' as *;
+@use '@cfpb/cfpb-design-system/src/elements/abstracts' as *;
+@use '@cfpb/cfpb-design-system/src/elements/base' as *;
 @use '@cfpb/cfpb-design-system/dist/index.css' as *;
 
 // Custom modules.
@@ -22,7 +22,6 @@
 @use 'variation' as *;
 @use 'color-swatches' as *;
 @use 'search' as *;
-@include define-custom-props;
 
 // Webfont
 // This is the path for self-hosted fonts.
@@ -69,11 +68,11 @@ details summary::after {
   display: block;
   content: '';
 
-  --cfpb-background-icon-svg: 'down';
+  background-image: url('../../_includes/icons/down.svg?raw');
 }
 
 details[open] summary::after {
-  --cfpb-background-icon-svg: 'up';
+  background-image: url('../../_includes/icons/up.svg?raw');
 }
 
 // Set padding for main content blocks.

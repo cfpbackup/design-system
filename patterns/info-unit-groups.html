@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/design-system/dist/main.css">
+  <link rel="stylesheet" href="/design-system/dist/index.css">
   <script>
       // Confirm availability of JS and remove no-js class from html
       var docElement = document.documentElement;
@@ -40,9 +40,33 @@
   <div class="site-header">
 
     <form id="search-form" action="/design-system/search" method="get">
-    <label class="u-visually-hidden" for="search-box">Search:</label>
-    <input type="text" id="search-box" class="a-text-input" name="searchQuery" placeholder="Enter your query">
-    <button class="a-btn" type="submit">Search</button>
+    <cfpb-form-search id="search-box" form="search-form" name="searchQuery">
+        <ul>
+            <li><a href="/design-system/components/alerts">Alerts</a></li>
+            <li><a href="/design-system/components/banner-notification">Banner (notification)</a></li>
+            <li><a href="/design-system/components/banner-us-gov">Banner (US gov)</a></li>
+            <li><a href="/design-system/components/buttons">Buttons</a></li>
+            <li><a href="/design-system/components/checkboxes">Checkboxes</a></li>
+            <li><a href="/design-system/components/date-picker">Date picker</a></li>
+            <li><a href="/design-system/components/expandables">Expandables</a></li>
+            <li><a href="/design-system/components/fieldsets">Fieldsets</a></li>
+            <li><a href="/design-system/components/helper-text">Helper text</a></li>
+            <li><a href="/design-system/components/labels-and-legends">Labels and legends</a></li>
+            <li><a href="/design-system/components/links">Links</a></li>
+            <li><a href="/design-system/components/lists">Lists</a></li>
+            <li><a href="/design-system/components/pagination">Pagination</a></li>
+            <li><a href="/design-system/components/radio-buttons">Radio buttons</a></li>
+            <li><a href="/design-system/components/range-sliders">Range sliders</a></li>
+            <li><a href="/design-system/components/selects">Selects</a></li>
+            <li><a href="/design-system/components/summaries">Summaries</a></li>
+            <li><a href="/design-system/components/tables">Tables</a></li>
+            <li><a href="/design-system/components/tags">Tags</a></li>
+            <li><a href="/design-system/components/taglines">Taglines</a></li>
+            <li><a href="/design-system/components/text-inputs">Text inputs</a></li>
+            <li><a href="/design-system/components/tooltips">Tooltips</a></li>
+            <li><a href="/design-system/components/elements">Web Components</a></li>
+        </ul>
+    </cfpb-form-search>
 </form>
 
 
@@ -134,11 +158,7 @@
                         <ul class="m-list m-list--links">
                         
                             <li class="m-list__item">
-                                <a class="a-link a-link--jump" href="/design-system/patterns/designing-forms">Designing forms</a>
-                            </li>
-                        
-                            <li class="m-list__item">
-                                <a class="a-link a-link--jump" href="/design-system/patterns/e-mail-signup-forms">E-mail signup forms</a>
+                                <a class="a-link a-link--jump" href="/design-system/patterns/email-signup-forms">Email signup forms</a>
                             </li>
                         
                         </ul>
@@ -218,10 +238,6 @@
                                 <a class="a-link a-link--jump" href="/design-system/patterns/info-unit-groups">Info unit groups</a>
                             </li>
                         
-                            <li class="m-list__item">
-                                <a class="a-link a-link--jump" href="/design-system/patterns/interactive-charts">Interactive charts</a>
-                            </li>
-                        
                         </ul>
                     </div>
                     
@@ -296,11 +312,11 @@
     <ul class="m-list m-list--horizontal m-list--horizontal-spaced">
         
         <li class="m-list__item">
-            <a href="#image-and-text">Image and text</a>
+            <a href="#types">Types</a>
         </li>
         
         <li class="m-list__item">
-            <a href="#text-only">Text only</a>
+            <a href="#use-cases">Use cases</a>
         </li>
         
         <li class="m-list__item">
@@ -320,24 +336,26 @@
 
     
     <section id="description" class="u-mb30">
-        <p>Info unit groups are generally used to provide brief context as they lead users from a parent page (<a href="https://cfpb.github.io/design-system/templates/landing-pages">landing pages</a>, <a href="https://cfpb.github.io/design-system/templates/sublanding-pages">sublanding pages</a>, and <a href="https://cfpb.github.io/design-system/templates/browse-pages">browse pages</a>) to additional content on a child or sibling page. Info units provide the ability to create content with multicolumn layouts. There are two types: image and text, or text only.</p>
+        <p>Info unit groups are used to draw a user’s eye to key information on a page. An info unit can contain an image, brief description, and call-to-action link to lead a user to additional content on a child or sibling page.</p>
 
     </section>
     
 
     
+
     
-    <section class="o-variation-group" id="image-and-text">
+    
+    <section class="o-variation-group" id="types">
 
         
         <h2 class="o-variation-group__title">
-            Image and text
+            Types
         </h2>
         
 
         
         <div class="o-variation-group__description">
-            <p>Image and text components consist of an image, plus a heading, short descriptive text, and call to action. There are three layouts that allow you to pair text with images: 25/75, 50/50, and 33/33/33 components.</p>
+            
 
         </div>
         
@@ -353,7 +371,7 @@
             
             <div class="m-variation__name">
                 <h3>
-                    25/75 image and text component
+                    25/75 info unit
                     
                 </h3>
             </div>
@@ -361,30 +379,7 @@
 
             
             <div class="m-variation__description">
-                <p><img src="/design-system/images/uploads/2575example_desktop-1-.jpg" alt="Info unit group: example of 25/75" title="Info unit group: example of 25/75"></p>
-
-<p><img src="" alt=""></p>
-
-<p>The 25/75 image and text component is used to draw the user’s eye to key information and navigation links, and aid comprehension by pairing content with illustration/imagery.</p>
-
-<p>When used in conjunction with 50/50 text components, it can help create a hierarchy of child pages or other content on the page, or can help feature a particular link over others.</p>
-
-<p>The 25/75 image and text component is the only format where the format name, 25/75, refers to how each individual unit it laid out, not to how multiple units are laid out.</p>
-
-<h4 id="when-to-use">When to use</h4>
-
-<ul>
-  <li>When a call-to-action, leading users to a deeper page in the section, needs a visual highlight on the page</li>
-  <li>When an image or illustration helps users better understand the purpose of content</li>
-  <li>Can be used for an even or odd number of items and may imply a hierarchy of information given the list style format</li>
-</ul>
-
-<h4 id="when-other-options-are-better">When other options are better</h4>
-
-<ul>
-  <li>When content doesn’t require imagery</li>
-  <li>When there are multiple paragraphs of copy</li>
-</ul>
+                <p><img src="/design-system/images/uploads/25-75.png" alt="25/75 info unit group"></p>
 
             </div>
             
@@ -397,57 +392,6 @@
             
             
 
-            
-
-            <div class="a-toggle__code">
-                <button href="#details-25-75-image-and-text-component-i-1" class="a-btn a-btn--link" data-toggle-details="show">Show details</button>
-                <button href="#details-25-75-image-and-text-component-i-1" class="a-btn a-btn--link u-hidden" data-toggle-details="hide">Hide details</button>
-            </div>
-
-            <div class="m-tabs u-hidden" id="details-25-75-image-and-text-component-i-1">
-                <ul class="m-tabs__list">
-                    
-                    
-                    
-                    
-                    <li class="m-tabs__list-item">
-                        <a class="m-tabs__tab" href="#details-25-75-image-and-text-component-i-specs-1">
-                            Specs
-                        </a>
-                    </li>
-                    
-                </ul>
-
-                <!-- HTML snippet -->
-                
-
-                <!-- Jinja snippet -->
-                
-
-                <!-- Implementation details -->
-                
-
-                <!-- Specs -->
-                
-                <section class="m-tabs__panel" id="details-25-75-image-and-text-component-i-specs-1">
-                    <div>
-                        <h4 class="variation-specs-title">Specs</h4>
-                        <div style="padding:40px">
-                            <p><img src="/design-system/images/uploads/25-75_style_desktop_1.jpg" alt="diagram of the 25/75 image and text module with 30px of spacing shown" title="Info unit group: specs for 25/75 image and text"></p>
-
-<ul>
-  <li>Imagery: 1:1 ratio, may be illustration or photography</li>
-  <li>150px wide for 901+ px breakpoint and 130 px wide for 900 px breakpoint and below</li>
-  <li>Padding: 30px padding for imagery across responsive sizes</li>
-  <li>Headings: H2-4 can be used</li>
-</ul>
-
-                        </div>
-                    </div>
-                </section>
-                
-
-            </div>
             
 
         </div>
@@ -462,7 +406,7 @@
             
             <div class="m-variation__name">
                 <h3>
-                    50/50 image and text component
+                    50/50 info unit
                     
                 </h3>
             </div>
@@ -470,27 +414,7 @@
 
             
             <div class="m-variation__description">
-                <p><img src="/design-system/images/uploads/50_50_intro_mockup.png" alt="Image showing layout of a 50/50 image and text component"></p>
-
-<p>The 50/50 image and text component is used to call attention to linked content on a page. At larger breakpoints, this component has a two column layout to utilize extra screen real estate.</p>
-
-<p>The 50/50 text component is a variation of the 50/50 image and text. The text-only version does not use imagery.</p>
-
-<h4 id="when-to-use">When to use</h4>
-
-<ul>
-  <li>When a call-to-action, leading users to a deeper page in the section, needs a visual highlight on the page</li>
-  <li>When an image or illustration helps users better understand the purpose of content</li>
-  <li>Ideally, when an even number of these components can be featured together</li>
-  <li>To help establish a hierarchy of linked content on this page</li>
-</ul>
-
-<h4 id="when-other-options-are-better">When other options are better</h4>
-
-<ul>
-  <li>When content doesn’t require imagery</li>
-  <li>When there are multiple paragraphs of copy</li>
-</ul>
+                <p><img src="/design-system/images/uploads/50-50.png" alt="50/50 info unit group"></p>
 
             </div>
             
@@ -506,244 +430,22 @@
             
 
             <div class="a-toggle__code">
-                <button href="#details-50-50-image-and-text-component-i-2" class="a-btn a-btn--link" data-toggle-details="show">Show details</button>
-                <button href="#details-50-50-image-and-text-component-i-2" class="a-btn a-btn--link u-hidden" data-toggle-details="hide">Hide details</button>
+                <button href="#details-50-50-info-unit-50-50-info-unit--2" class="a-btn a-btn--link" data-toggle-details="show">Show details</button>
+                <button href="#details-50-50-info-unit-50-50-info-unit--2" class="a-btn a-btn--link u-hidden" data-toggle-details="hide">Hide details</button>
             </div>
 
-            <div class="m-tabs u-hidden" id="details-50-50-image-and-text-component-i-2">
-                <ul class="m-tabs__list">
-                    
-                    
-                    
-                    
-                    <li class="m-tabs__list-item">
-                        <a class="m-tabs__tab" href="#details-50-50-image-and-text-component-i-specs-2">
-                            Specs
-                        </a>
-                    </li>
-                    
-                </ul>
-
-                <!-- HTML snippet -->
-                
-
-                <!-- Jinja snippet -->
-                
-
-                <!-- Implementation details -->
-                
-
-                <!-- Specs -->
-                
-                <section class="m-tabs__panel" id="details-50-50-image-and-text-component-i-specs-2">
-                    <div>
-                        <h4 class="variation-specs-title">Specs</h4>
-                        <div style="padding:40px">
-                            <p><img src="/design-system/images/uploads/50_50_style_mockup.png" alt=""></p>
-
-<ul>
-  <li>Imagery: 16:9 ratio, recommend 1600 x 900 pixels to account for retina displays</li>
-  <li>Headings: H2-4 can be used</li>
-  <li>Body copy: Avenir paragraph</li>
-  <li>At breakpoints below 601: Heading sizes H3 and above automatically drop down one level and the mobile link style is used for the call to action link(s).</li>
-</ul>
-
-                        </div>
-                    </div>
-                </section>
-                
-
-            </div>
-            
-
-        </div>
-        
-        <div class="m-variation">
-
-            
-            
-            
-            
-
-            
-            <div class="m-variation__name">
-                <h3>
-                    33/33/33 image and text component
-                    
-                </h3>
-            </div>
-            
-
-            
-            <div class="m-variation__description">
-                <p><img src="/design-system/images/uploads/33-33-33_image_text.jpg" alt="Image of a 33/33/33 image and text component"></p>
-
-<h4 id="when-to-use">When to use</h4>
-
-<ul>
-  <li>Ideally, when a group of these components can be featured together in multiples of three (3, 6, 9, etc.)</li>
-  <li>When an image or illustration helps users better understand the purpose of content</li>
-</ul>
-
-<h4 id="when-other-options-are-better">When other options are better</h4>
-
-<ul>
-  <li>When the number of components would be better featured in multiples of 2, use the 50/50 text component instead</li>
-  <li>When headings are too long for the narrower width, for example, when they break to 3 lines or more</li>
-  <li>When content doesn’t require imagery</li>
-  <li>When there are multiple paragraphs of copy</li>
-</ul>
-
-            </div>
-            
-
-            <!-- Live code example -->
-            
-
-            
-            
-            
-            
-
-            
-
-            <div class="a-toggle__code">
-                <button href="#details-33-33-33-image-and-text-componen-3" class="a-btn a-btn--link" data-toggle-details="show">Show details</button>
-                <button href="#details-33-33-33-image-and-text-componen-3" class="a-btn a-btn--link u-hidden" data-toggle-details="hide">Hide details</button>
-            </div>
-
-            <div class="m-tabs u-hidden" id="details-33-33-33-image-and-text-componen-3">
-                <ul class="m-tabs__list">
-                    
-                    
-                    
-                    
-                    <li class="m-tabs__list-item">
-                        <a class="m-tabs__tab" href="#details-33-33-33-image-and-text-componen-specs-3">
-                            Specs
-                        </a>
-                    </li>
-                    
-                </ul>
-
-                <!-- HTML snippet -->
-                
-
-                <!-- Jinja snippet -->
-                
-
-                <!-- Implementation details -->
-                
-
-                <!-- Specs -->
-                
-                <section class="m-tabs__panel" id="details-33-33-33-image-and-text-componen-specs-3">
-                    <div>
-                        <h4 class="variation-specs-title">Specs</h4>
-                        <div style="padding:40px">
-                            <ul>
-  <li>Imagery: 1:1 ratio, may be illustration or photography</li>
-  <li>150px wide for 901+ px breakpoint and 130 px wide for 900 px breakpoint and below</li>
-  <li>Headings: H2-4 can be used</li>
-</ul>
-
-                        </div>
-                    </div>
-                </section>
-                
-
-            </div>
-            
-
-        </div>
-        
-    </section>
-    
-    <section class="o-variation-group" id="text-only">
-
-        
-        <h2 class="o-variation-group__title">
-            Text only
-        </h2>
-        
-
-        
-        <div class="o-variation-group__description">
-            <p>Text components consist of a heading, short descriptive text, and call to action. There are two types: 50/50 and 33/33/33.</p>
-
-        </div>
-        
-
-        
-        <div class="m-variation">
-
-            
-            
-            
-            
-
-            
-            <div class="m-variation__name">
-                <h3>
-                    50/50 text component
-                    
-                </h3>
-            </div>
-            
-
-            
-            <div class="m-variation__description">
-                <p><img src="/design-system/images/uploads/halfwidthblob_intro_mockup.png" alt="Info unit group: example of half width link blob" title="Info unit group: example of half width link blob"></p>
-
-<h4 id="when-to-use">When to use</h4>
-
-<ul>
-  <li>Ideally, when an even number of these components can be featured together</li>
-</ul>
-
-<h4 id="when-other-options-are-better">When other options are better</h4>
-
-<ul>
-  <li>When the number of components would be better featured in multiples of 3, use the 33/33/33 text component instead</li>
-  <li>When content requires imagery, use the 50/50 image and text or 25/75 image and text components</li>
-</ul>
-
-            </div>
-            
-
-            <!-- Live code example -->
-            
-
-            
-            
-            
-            
-
-            
-
-            <div class="a-toggle__code">
-                <button href="#details-50-50-text-component-info-unit-g-1" class="a-btn a-btn--link" data-toggle-details="show">Show details</button>
-                <button href="#details-50-50-text-component-info-unit-g-1" class="a-btn a-btn--link u-hidden" data-toggle-details="hide">Hide details</button>
-            </div>
-
-            <div class="m-tabs u-hidden" id="details-50-50-text-component-info-unit-g-1">
+            <div class="m-tabs u-hidden" id="details-50-50-info-unit-50-50-info-unit--2">
                 <ul class="m-tabs__list">
                     
                     
                     <li class="m-tabs__list-item">
-                        <a class="m-tabs__tab" href="#details-50-50-text-component-info-unit-g-jinja-code-snippet-1">
+                        <a class="m-tabs__tab" href="#details-50-50-info-unit-50-50-info-unit--jinja-code-snippet-2">
                             Jinja code snippet
                         </a>
                     </li>
                     
                     
                     
-                    <li class="m-tabs__list-item">
-                        <a class="m-tabs__tab" href="#details-50-50-text-component-info-unit-g-specs-1">
-                            Specs
-                        </a>
-                    </li>
-                    
                 </ul>
 
                 <!-- HTML snippet -->
@@ -751,7 +453,7 @@
 
                 <!-- Jinja snippet -->
                 
-                <section class="m-tabs__panel" id="details-50-50-text-component-info-unit-g-jinja-code-snippet-1">
+                <section class="m-tabs__panel" id="details-50-50-info-unit-50-50-info-unit--jinja-code-snippet-2">
                     <div class="variation-jinja-code-snippet">
                         <h4 class="variation-jinja-code-snippet-title">Jinja code snippet</h4>
                         <div class="source-code">
@@ -768,25 +470,6 @@ https://github.com/cfpb/consumerfinance.gov/blob/e67d1ad321551c221c01eaa62589dfd
 
                 <!-- Specs -->
                 
-                <section class="m-tabs__panel" id="details-50-50-text-component-info-unit-g-specs-1">
-                    <div>
-                        <h4 class="variation-specs-title">Specs</h4>
-                        <div style="padding:40px">
-                            <ul>
-  <li>Headings: Use H3 or H4. Do not use both.
-    <ul>
-      <li>H3: Use when you wish to give the heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more.</li>
-      <li>H4: Use when you wish to give the heading text less prominence within the page hierarchy or when the component follows an H3 heading. When you select the H4 you have the option of including a minicon to the left of the heading.</li>
-    </ul>
-  </li>
-</ul>
-
-<p><img src="/design-system/images/uploads/halfwidthblob_style_mockup.png" alt=""></p>
-
-                        </div>
-                    </div>
-                </section>
-                
 
             </div>
             
@@ -803,7 +486,7 @@ https://github.com/cfpb/consumerfinance.gov/blob/e67d1ad321551c221c01eaa62589dfd
             
             <div class="m-variation__name">
                 <h3>
-                    33/33/33 text component
+                    33/33/33 info unit
                     
                 </h3>
             </div>
@@ -811,21 +494,7 @@ https://github.com/cfpb/consumerfinance.gov/blob/e67d1ad321551c221c01eaa62589dfd
 
             
             <div class="m-variation__description">
-                <p><img src="/design-system/images/uploads/third_width_link_blob_intro.png" alt="Info unit group: example of third width link blob" title="Info unit group: example of third width link blob"></p>
-
-<h4 id="when-to-use">When to use</h4>
-
-<ul>
-  <li>Ideally, when a group of these components can be featured together in multiples of three (3, 6, 9, etc.)</li>
-</ul>
-
-<h4 id="when-other-options-are-better">When other options are better</h4>
-
-<ul>
-  <li>When the number of components would be better featured in multiples of 2, use the 50/50 text component instead.</li>
-  <li>When headings are too long for the narrower width, for example, when they break to 3 lines or more</li>
-  <li>When content requires imagery, use the 50/50 image and text or the 25/75 image and text instead</li>
-</ul>
+                <p><img src="/design-system/images/uploads/33-33-33.png" alt="33/33/33 info unit group"></p>
 
             </div>
             
@@ -841,27 +510,21 @@ https://github.com/cfpb/consumerfinance.gov/blob/e67d1ad321551c221c01eaa62589dfd
             
 
             <div class="a-toggle__code">
-                <button href="#details-33-33-33-text-component-info-uni-2" class="a-btn a-btn--link" data-toggle-details="show">Show details</button>
-                <button href="#details-33-33-33-text-component-info-uni-2" class="a-btn a-btn--link u-hidden" data-toggle-details="hide">Hide details</button>
+                <button href="#details-33-33-33-info-unit-33-33-33-info-3" class="a-btn a-btn--link" data-toggle-details="show">Show details</button>
+                <button href="#details-33-33-33-info-unit-33-33-33-info-3" class="a-btn a-btn--link u-hidden" data-toggle-details="hide">Hide details</button>
             </div>
 
-            <div class="m-tabs u-hidden" id="details-33-33-33-text-component-info-uni-2">
+            <div class="m-tabs u-hidden" id="details-33-33-33-info-unit-33-33-33-info-3">
                 <ul class="m-tabs__list">
                     
                     
                     <li class="m-tabs__list-item">
-                        <a class="m-tabs__tab" href="#details-33-33-33-text-component-info-uni-jinja-code-snippet-2">
+                        <a class="m-tabs__tab" href="#details-33-33-33-info-unit-33-33-33-info-jinja-code-snippet-3">
                             Jinja code snippet
                         </a>
                     </li>
                     
                     
-                    
-                    <li class="m-tabs__list-item">
-                        <a class="m-tabs__tab" href="#details-33-33-33-text-component-info-uni-specs-2">
-                            Specs
-                        </a>
-                    </li>
                     
                 </ul>
 
@@ -870,7 +533,7 @@ https://github.com/cfpb/consumerfinance.gov/blob/e67d1ad321551c221c01eaa62589dfd
 
                 <!-- Jinja snippet -->
                 
-                <section class="m-tabs__panel" id="details-33-33-33-text-component-info-uni-jinja-code-snippet-2">
+                <section class="m-tabs__panel" id="details-33-33-33-info-unit-33-33-33-info-jinja-code-snippet-3">
                     <div class="variation-jinja-code-snippet">
                         <h4 class="variation-jinja-code-snippet-title">Jinja code snippet</h4>
                         <div class="source-code">
@@ -887,25 +550,6 @@ https://github.com/cfpb/consumerfinance.gov/blob/e67d1ad321551c221c01eaa62589dfd
 
                 <!-- Specs -->
                 
-                <section class="m-tabs__panel" id="details-33-33-33-text-component-info-uni-specs-2">
-                    <div>
-                        <h4 class="variation-specs-title">Specs</h4>
-                        <div style="padding:40px">
-                            <ul>
-  <li>Headings: Use H3 or H4. Do not use both.
-    <ul>
-      <li>H3: Use when you wish to give the heading text a higher level of prominence within the page hierarchy. Avoid using H3 when it will cause the heading to break to 3 lines or more.</li>
-      <li>H4: Use when you wish to give the heading text less prominence within the page hierarchy or when the component follows an H3 heading. When you select the H4 you have the option of including a minicon to the left of the heading.</li>
-    </ul>
-  </li>
-</ul>
-
-<p><img src="/design-system/images/uploads/third_width_link_blob_style.png" alt=""></p>
-
-                        </div>
-                    </div>
-                </section>
-                
 
             </div>
             
@@ -921,6 +565,25 @@ https://github.com/cfpb/consumerfinance.gov/blob/e67d1ad321551c221c01eaa62589dfd
         <section class="sticky-header u-mb45">
 
             
+                <h2 id="use-cases">Use cases</h2>
+                <div class="content__line content__line--wide u-mb20"></div>
+                <p>
+                </p>
+<h3 id="when-to-use">When to use</h3>
+
+<ul>
+  <li>To visually call out succinct information and a call-to-action link that leads users to a deeper dive into content</li>
+  <li>To help establish a hierarchy of linked content on a page</li>
+</ul>
+
+<h3 id="when-other-options-are-better">When other options are better</h3>
+
+<ul>
+  <li>When presenting multiple paragraphs of content</li>
+</ul>
+
+                
+            
 
             
                 <h2 id="guidelines">Guidelines</h2>
@@ -929,57 +592,99 @@ https://github.com/cfpb/consumerfinance.gov/blob/e67d1ad321551c221c01eaa62589dfd
                 </p>
 <h3 id="content-guidelines">Content guidelines</h3>
 
-<h4 id="headings">Headings</h4>
-
 <ul>
-  <li>25/75 image and text component: 60 characters or less, ideally rendering as one line</li>
-  <li>50/50 image and text component: 30 characters or less, ideally rendering as one line</li>
-  <li>50/50 and 33/33/33 text components: 45 characters max. 25 characters max is preferred, which renders as one line at max column width.</li>
-  <li>Option to give the entire info unit group a heading</li>
+  <li>Content in info units should be succinct. Do not use info units for multiple paragraphs of copy.</li>
+  <li>In addition to giving each info unit a heading and description, you may optionally give the info unit group a heading and introductory paragraph.</li>
+  <li>Each info unit type may use an H2, H3, or H4 depending on where the info unit sits within the page’s heading hierarchy.</li>
 </ul>
 
-<h4 id="descriptions">Descriptions</h4>
+<h4 id="2575-info-unit">25/75 info unit</h4>
 
 <ul>
-  <li>Do not use info unit groups for multiple paragraphs of copy. Copy should be succinct.</li>
-  <li>50/50 text components: 100-250 characters max</li>
-  <li>33/33/33 text components: 90-150 characters max</li>
-  <li>25/75 image and text component: 275 characters max</li>
-  <li>50/50 image and text component: 50 characters min, 130 characters max, which renders as 2-3 lines at max column width</li>
+  <li>Heading: Maximum 60 characters</li>
+  <li>Description: Maximum 275 characters</li>
+  <li>Call to action: Maximum 65 characters</li>
+</ul>
+
+<h4 id="5050-info-unit">50/50 info unit</h4>
+
+<p>Ideally, use an even number of 50/50 info units as a group. The content in each info unit should be roughly the same number of lines if possible.</p>
+
+<ul>
+  <li>Heading: Maximum 30 characters</li>
   <li>
-    <p>When these components are featured together (which is ideal), the amount of content in each component should be as close to the same number of total lines as possible.</p>
+    <p>Description</p>
 
     <ul>
-      <li>For 50/50 text components, one or two lines different is ok.</li>
-      <li>For 33/33/33 text components, a difference of one line is ok.</li>
+      <li>If including an image, minimum 50 characters and maximum 130 characters</li>
+      <li>If not including an image, minimum 100 characters and maximum 250 characters</li>
     </ul>
   </li>
-  <li>Option to give the entire info unit group an introductory paragraph.</li>
+  <li>Call to action: Maximum 40 characters</li>
 </ul>
 
-<h4 id="call-to-action">Call to action</h4>
+<h4 id="333333-info-unit">33/33/33 info unit</h4>
+
+<p>Ideally, group 33/33/33 info units in multiples of three. The content in each info unit should be roughly the same number of lines if possible.</p>
 
 <ul>
-  <li>25/75 image and text component: 65 characters max</li>
-  <li>50/50 image and text component: 40 characters max</li>
-  <li>50/50 text components: 40 characters max</li>
-  <li>33/33/33 text components: 30 characters max</li>
-  <li>Option to include sharing links below the info units</li>
-  <li>Follow <a href="https://cfpb.github.io/design-system/components/links">link guidelines</a>.</li>
+  <li>Heading: Maximum 30 characters</li>
+  <li>Description: Minimum 90 characters and maximum 150 characters</li>
+  <li>Call to action: Maximum 30 characters</li>
+</ul>
+
+<h3 id="image-guidelines">Image guidelines</h3>
+
+<p>Images can be illustrations or photos.</p>
+
+<h4 id="2575-info-unit-1">25/75 info unit</h4>
+
+<ul>
+  <li>Image required</li>
+  <li>
+    <p>1:1 ratio size</p>
+
+    <ul>
+      <li>Export the image at a 300px width to display well on retina screens. It will appear as 150px wide at a large browser width and automatically resize to 130px wide at a small browser width.</li>
+    </ul>
+  </li>
+  <li>Can be a square or circle crop</li>
+</ul>
+
+<h4 id="5050-info-unit-1">50/50 info unit</h4>
+
+<ul>
+  <li>Image optional</li>
+  <li>
+    <p>16:9 or 1:1 ratio size</p>
+
+    <ul>
+      <li>For 16:9, export the image at a 1076px width by 606px height to display well on retina screens. It will appear at a 538px width by 303px height.</li>
+      <li>For 1:1, export the image at a 300px width to display well on retina screens. It will appear as 150px wide at a large browser width and automatically resize to 130px wide at a small browser width. The image can be a square or circle crop.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="333333-info-unit-1">33/33/33 info unit</h4>
+
+<ul>
+  <li>Image optional</li>
+  <li>
+    <p>1:1 ratio size</p>
+
+    <ul>
+      <li>Export the image at a 300px width to display well on retina screens. It will appear as 150px wide at a large browser width and automatically resize to 130px wide at a small browser width.</li>
+    </ul>
+  </li>
+  <li>Can be a square or circle crop</li>
 </ul>
 
 <h3 id="stylistic-guidelines">Stylistic guidelines</h3>
 
 <ul>
-  <li>
-    <p>If an info unit group contains both an image and a call to action link, you have the option of having the image link to the call to action URL. If there are multiple call to action links, the image will link to the first link.</p>
-  </li>
-  <li>
-    <p>Option to include a rule above an info unit group to separate it from the previous section on the page</p>
-  </li>
-  <li>
-    <p>Option to include a rule between rows of info units (or between each info unit in the case of a 25/75 layout)</p>
-  </li>
+  <li>Option to include a rule above an info unit group to separate it from the previous section on the page</li>
+  <li>Option to include a rule between rows of info units (or between each info unit in the case of the 25/75 info unit)</li>
+  <li>If an info unit group contains both an image and a call-to-action link, option to make the image link to the call-to-action URL. If there are multiple call-to-action links, the image will link to the first link.</li>
 </ul>
 
                 
@@ -990,47 +695,7 @@ https://github.com/cfpb/consumerfinance.gov/blob/e67d1ad321551c221c01eaa62589dfd
                 <div class="content__line content__line--wide u-mb20"></div>
                 <p>
                 </p>
-<h3 id="5050-components">50/50 components</h3>
-
-<p>Both the image and text and text-only components behave similarly. The text-only component is shown here.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Above 600 px</th>
-      <th>Below 601 px</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="/design-system/images/uploads/halfwidthblob_behavior_mockup_1.png" alt=""></td>
-      <td><img src="/design-system/images/uploads/halfwidthblob_behavior_mockup_2.png" alt=""></td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="333333-text-component">33/33/33 text component</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Above 600 px</th>
-      <th>Below 601 px</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="/design-system/images/uploads/third_width_link_blob_behavior_1.png" alt=""></td>
-      <td><img src="/design-system/images/uploads/third_width_link_blob_behavior_2.png" alt=""></td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="2575-image-and-text-component">25/75 image and text component</h3>
-
-<p>At breakpoints below 601, side-by-side modules stack vertically in Z-order as shown below, and the mobile link style is used for the call to action link(s).</p>
-
-<p><img src="/design-system/images/uploads/25-75-behavior-600.png" alt="Below 600 px the 25/75 image and text components collapse with the image above the header and description text" title="Breakpoint diagram for how 25/75 image and text component works at smaller screen sizes"></p>
+<p>All info units stack to one column at small screen size.</p>
 
                 
             
@@ -1048,11 +713,11 @@ https://github.com/cfpb/consumerfinance.gov/blob/e67d1ad321551c221c01eaa62589dfd
             <div class="content-l__col content-l__col-1">
                 <div>
                     <section>
-                        <h2 id="related-items">Related Items</h2>
+                        <h2 id="related-items">Related items</h2>
                         <div class="content__line--wide content__line u-mb20"></div>
                         <ul>
   <li><a href="https://cfpb.github.io/design-system/components/links">Links</a></li>
-  <li><a href="https://cfpb.github.io/design-system/foundation/typography">Typography</a></li>
+  <li><a href="https://cfpb.github.io/design-system/foundation/paragraphs">Paragraphs</a></li>
 </ul>
 
                     </section>
@@ -1066,7 +731,7 @@ https://github.com/cfpb/consumerfinance.gov/blob/e67d1ad321551c221c01eaa62589dfd
             <div class="content-l__col content-l__col-1">
                 <div>
                     <section>
-                        <h2 id="latest-updates">Latest Updates</h2>
+                        <h2 id="latest-updates">Latest updates</h2>
                         <div class="content__line--wide content__line u-mb20"></div>
                         <strong>Page last edited:</strong>
                         
@@ -1074,8 +739,8 @@ https://github.com/cfpb/consumerfinance.gov/blob/e67d1ad321551c221c01eaa62589dfd
                         
                         
                         <a href="https://github.com/cfpb/design-system/commits/main/docs/pages/info-unit-groups-link-blobs.md">
-                            <time datetime="2025-01-24 16:12:37 -0500">
-                                 4:12:37 PM Jan 24, 2025
+                            <time datetime="2026-03-11 15:03:24 -0400">
+                                 3:03:24 PM Mar 11, 2026
                             </time>
                         </a>
                     </section>
@@ -1115,22 +780,20 @@ https://github.com/cfpb/consumerfinance.gov/blob/e67d1ad321551c221c01eaa62589dfd
 
     <div class="block block--sub ds-footer__content">
         <p>
-            <small>
-                We need your help keeping the Design System accurate and up-to-date!
-                If you see something wrong or missing,
-                <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
-                If you can’t make those changes yourself,
-                <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Info%20unit%20groups%3A+Add+issue+description">file an issue</a>.
-                If you have a substantial change to an existing page, or a new standard you want to add,
-                <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
-            </small>
+            We need your help keeping the Design System accurate and up-to-date!
+            If you see something wrong or missing,
+            <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
+            If you can’t make those changes yourself,
+            <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Info%20unit%20groups%3A+Add+issue+description">file an issue</a>.
+            If you have a substantial change to an existing page, or a new standard you want to add,
+            <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
         </p>
     </div>
 
 </footer>
 
   
-  <script src="/design-system/dist/main.js" charset="utf-8"></script>
+  <script type="module" src="/design-system/dist/main.js" charset="utf-8"></script>
 
   
 

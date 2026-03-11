@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/design-system/dist/main.css">
+  <link rel="stylesheet" href="/design-system/dist/index.css">
   <script>
       // Confirm availability of JS and remove no-js class from html
       var docElement = document.documentElement;
@@ -40,9 +40,33 @@
   <div class="site-header">
 
     <form id="search-form" action="/design-system/search" method="get">
-    <label class="u-visually-hidden" for="search-box">Search:</label>
-    <input type="text" id="search-box" class="a-text-input" name="searchQuery" placeholder="Enter your query">
-    <button class="a-btn" type="submit">Search</button>
+    <cfpb-form-search id="search-box" form="search-form" name="searchQuery">
+        <ul>
+            <li><a href="/design-system/components/alerts">Alerts</a></li>
+            <li><a href="/design-system/components/banner-notification">Banner (notification)</a></li>
+            <li><a href="/design-system/components/banner-us-gov">Banner (US gov)</a></li>
+            <li><a href="/design-system/components/buttons">Buttons</a></li>
+            <li><a href="/design-system/components/checkboxes">Checkboxes</a></li>
+            <li><a href="/design-system/components/date-picker">Date picker</a></li>
+            <li><a href="/design-system/components/expandables">Expandables</a></li>
+            <li><a href="/design-system/components/fieldsets">Fieldsets</a></li>
+            <li><a href="/design-system/components/helper-text">Helper text</a></li>
+            <li><a href="/design-system/components/labels-and-legends">Labels and legends</a></li>
+            <li><a href="/design-system/components/links">Links</a></li>
+            <li><a href="/design-system/components/lists">Lists</a></li>
+            <li><a href="/design-system/components/pagination">Pagination</a></li>
+            <li><a href="/design-system/components/radio-buttons">Radio buttons</a></li>
+            <li><a href="/design-system/components/range-sliders">Range sliders</a></li>
+            <li><a href="/design-system/components/selects">Selects</a></li>
+            <li><a href="/design-system/components/summaries">Summaries</a></li>
+            <li><a href="/design-system/components/tables">Tables</a></li>
+            <li><a href="/design-system/components/tags">Tags</a></li>
+            <li><a href="/design-system/components/taglines">Taglines</a></li>
+            <li><a href="/design-system/components/text-inputs">Text inputs</a></li>
+            <li><a href="/design-system/components/tooltips">Tooltips</a></li>
+            <li><a href="/design-system/components/elements">Web Components</a></li>
+        </ul>
+    </cfpb-form-search>
 </form>
 
 
@@ -211,6 +235,20 @@
                     
                 </div>
                 
+                    <div class="ds-nav ds-nav-2">
+                        <div class="h5">Web Components (beta)</div>
+                        
+                        <ul class="m-list m-list--links">
+                        
+                            <li class="m-list__item">
+                                <a class="a-link a-link--jump" href="/design-system/components/elements">Elements</a>
+                            </li>
+                        
+                        </ul>
+                    
+                    
+                </div>
+                
             
             </div>
         </li>
@@ -292,12 +330,11 @@
 
     
     <section id="description" class="u-mb30">
-        <p class="lead-paragraph">Components are individual elements that can be used to create a webpage. A few examples include buttons, text inputs, tables, and alerts.</p>
-
-<p>The Design System provides design specifications, code snippets, usage guidelines, and where possible, accessibility and research guidelines.</p>
-
+        <p class="lead-paragraph">Components are individual elements that can be used to create a webpage. A few examples include buttons, text inputs, tables, and alerts. The Design System provides design specifications, code snippets, usage guidelines, and where possible, accessibility and research guidelines. </p>
 
     </section>
+    
+
     
 
     
@@ -346,22 +383,20 @@
 
     <div class="block block--sub ds-footer__content">
         <p>
-            <small>
-                We need your help keeping the Design System accurate and up-to-date!
-                If you see something wrong or missing,
-                <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
-                If you can’t make those changes yourself,
-                <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Components%3A+Add+issue+description">file an issue</a>.
-                If you have a substantial change to an existing page, or a new standard you want to add,
-                <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
-            </small>
+            We need your help keeping the Design System accurate and up-to-date!
+            If you see something wrong or missing,
+            <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
+            If you can’t make those changes yourself,
+            <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Components%3A+Add+issue+description">file an issue</a>.
+            If you have a substantial change to an existing page, or a new standard you want to add,
+            <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
         </p>
     </div>
 
 </footer>
 
   
-  <script src="/design-system/dist/main.js" charset="utf-8"></script>
+  <script type="module" src="/design-system/dist/main.js" charset="utf-8"></script>
 
   
 

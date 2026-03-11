@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/design-system/dist/main.css">
+  <link rel="stylesheet" href="/design-system/dist/index.css">
   <script>
       // Confirm availability of JS and remove no-js class from html
       var docElement = document.documentElement;
@@ -40,9 +40,33 @@
   <div class="site-header">
 
     <form id="search-form" action="/design-system/search" method="get">
-    <label class="u-visually-hidden" for="search-box">Search:</label>
-    <input type="text" id="search-box" class="a-text-input" name="searchQuery" placeholder="Enter your query">
-    <button class="a-btn" type="submit">Search</button>
+    <cfpb-form-search id="search-box" form="search-form" name="searchQuery">
+        <ul>
+            <li><a href="/design-system/components/alerts">Alerts</a></li>
+            <li><a href="/design-system/components/banner-notification">Banner (notification)</a></li>
+            <li><a href="/design-system/components/banner-us-gov">Banner (US gov)</a></li>
+            <li><a href="/design-system/components/buttons">Buttons</a></li>
+            <li><a href="/design-system/components/checkboxes">Checkboxes</a></li>
+            <li><a href="/design-system/components/date-picker">Date picker</a></li>
+            <li><a href="/design-system/components/expandables">Expandables</a></li>
+            <li><a href="/design-system/components/fieldsets">Fieldsets</a></li>
+            <li><a href="/design-system/components/helper-text">Helper text</a></li>
+            <li><a href="/design-system/components/labels-and-legends">Labels and legends</a></li>
+            <li><a href="/design-system/components/links">Links</a></li>
+            <li><a href="/design-system/components/lists">Lists</a></li>
+            <li><a href="/design-system/components/pagination">Pagination</a></li>
+            <li><a href="/design-system/components/radio-buttons">Radio buttons</a></li>
+            <li><a href="/design-system/components/range-sliders">Range sliders</a></li>
+            <li><a href="/design-system/components/selects">Selects</a></li>
+            <li><a href="/design-system/components/summaries">Summaries</a></li>
+            <li><a href="/design-system/components/tables">Tables</a></li>
+            <li><a href="/design-system/components/tags">Tags</a></li>
+            <li><a href="/design-system/components/taglines">Taglines</a></li>
+            <li><a href="/design-system/components/text-inputs">Text inputs</a></li>
+            <li><a href="/design-system/components/tooltips">Tooltips</a></li>
+            <li><a href="/design-system/components/elements">Web Components</a></li>
+        </ul>
+    </cfpb-form-search>
 </form>
 
 
@@ -330,6 +354,8 @@
     
 
     
+
+    
     
     <section class="o-variation-group" id="web-headings">
 
@@ -449,44 +475,69 @@ Example of a non heading element:
                             <table>
   <thead>
     <tr>
-      <th>Heading</th>
-      <th>Specs</th>
-      <th>Responsive behavior at &lt; 601px</th>
+      <th><strong>Heading</strong></th>
+      <th><strong>Font-weight</strong></th>
+      <th><strong>Font-size</strong></th>
+      <th>
+<strong>Font-size-adjust</strong>*</th>
+      <th><strong>Line-height</strong></th>
+      <th> <strong>Responsive behavior at &lt; 601px</strong>
+</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Display</td>
-      <td>Avenir Next Regular, 48px / 60px</td>
-      <td>Drops to Heading 1</td>
+      <td><strong>Display</strong></td>
+      <td>400 (Regular)</td>
+      <td>48px</td>
+      <td>0.517</td>
+      <td>60px</td>
+      <td>Drops to H1</td>
     </tr>
     <tr>
-      <td>Heading 1</td>
-      <td>Avenir Next Demi Bold, 34px / 42px</td>
-      <td>Drops to Heading 2</td>
+      <td><strong>H1</strong></td>
+      <td> 600 (Semi Bold) </td>
+      <td> 34px </td>
+      <td> 0.517 </td>
+      <td> 60px </td>
+      <td>Drops to H2 </td>
     </tr>
     <tr>
-      <td>Heading 2</td>
-      <td>Avenir Next Demi Bold, 26px / 32px</td>
-      <td>Drops to Heading 3</td>
+      <td><strong>H2</strong></td>
+      <td> 600 (Semi Bold) </td>
+      <td>26px </td>
+      <td> 0.517 </td>
+      <td> 42.5px </td>
+      <td>Drops to H3 </td>
     </tr>
     <tr>
-      <td>Heading 3</td>
-      <td>Avenir Next Regular, 22px / 28px</td>
-      <td>Drops to Heading 4</td>
+      <td><strong>H3</strong></td>
+      <td> 400 (Regular) </td>
+      <td>22px</td>
+      <td> 0.517 </td>
+      <td>32.5px </td>
+      <td>Drops to H4 </td>
     </tr>
     <tr>
-      <td>Heading 4</td>
-      <td>Avenir Next Medium, 18px / 22px</td>
-      <td>Drops to 16px / 18px</td>
+      <td><strong>H4</strong></td>
+      <td> 500 (Medium) </td>
+      <td>18px </td>
+      <td> 0.517 </td>
+      <td>22.5px </td>
+      <td>Drops to 16px</td>
     </tr>
     <tr>
-      <td>Heading 5</td>
-      <td>Avenir Next Demi Bold, 14px / 18px, All caps, 1px letter spacing</td>
-      <td>No change</td>
+      <td><strong>H5</strong></td>
+      <td> 600 (Semi Bold) </td>
+      <td>14px all caps</td>
+      <td> 0.517 </td>
+      <td>17.5px, 1px letter spacing </td>
+      <td>No change </td>
     </tr>
   </tbody>
 </table>
+
+<p>*See <a href="https://cfpb.github.io/design-system/foundation/fonts#normalization">Normalization</a> to learn why we use font-size-adjust.</p>
 
                         </div>
                     </div>
@@ -611,42 +662,54 @@ Example of a non heading element:
                             <table>
   <thead>
     <tr>
-      <th>Heading</th>
-      <th>Specs</th>
+      <th><strong>Heading</strong></th>
+      <th><strong>Font weight</strong></th>
+      <th><strong>Font size</strong></th>
+      <th><strong>Line height</strong></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Display</td>
-      <td>Avenir Next Medium, 60pt / 66pt</td>
+      <td><strong>Display</strong></td>
+      <td>Medium</td>
+      <td>60pt</td>
+      <td>66pt</td>
     </tr>
     <tr>
-      <td>Heading 1</td>
-      <td>Avenir Next Regular, 38pt / 40pt</td>
+      <td><strong>H1</strong></td>
+      <td>Regular</td>
+      <td>38pt</td>
+      <td>40pt</td>
     </tr>
     <tr>
-      <td>Heading 2</td>
-      <td>Avenir Next Regular, 26pt / 28pt</td>
+      <td><strong>H2</strong></td>
+      <td>Regular</td>
+      <td>26pt</td>
+      <td>28pt</td>
     </tr>
     <tr>
-      <td> </td>
-      <td> </td>
+      <td><strong>H3</strong></td>
+      <td>Semi Bold</td>
+      <td>16pt</td>
+      <td>18pt</td>
     </tr>
     <tr>
-      <td>Heading 3</td>
-      <td>Avenir Next Demi Bold, 16pt / 18pt</td>
+      <td><strong>H4</strong></td>
+      <td>Medium</td>
+      <td>14pt</td>
+      <td>16pt</td>
     </tr>
     <tr>
-      <td>Heading 4</td>
-      <td>Avenir Next Medium, 14pt / 16pt</td>
+      <td><strong>H5</strong></td>
+      <td>Semi Bold</td>
+      <td>10pt all caps</td>
+      <td>12pt</td>
     </tr>
     <tr>
-      <td>Heading 5</td>
-      <td>Avenir Next Demi Bold, 10pt / 12pt, all caps</td>
-    </tr>
-    <tr>
-      <td>Heading 6</td>
-      <td>Avenir Next Medium, 12pt /14 pt</td>
+      <td><strong>H6</strong></td>
+      <td>Medium</td>
+      <td>12pt</td>
+      <td>14pt</td>
     </tr>
   </tbody>
 </table>
@@ -803,10 +866,33 @@ Example of a non heading element:
                     <div>
                         <h4 class="variation-specs-title">Specs</h4>
                         <div style="padding:40px">
-                            <ul>
-  <li>Avenir Next Medium, 18px</li>
-  <li>View a <a href="https://cfpb.github.io/design-system/foundation/iconography">list of icons</a>. Icon height is constrained to 19px.</li>
-</ul>
+                            <p>View a <a href="https://cfpb.github.io/design-system/foundation/iconography">list of icons</a>. Icon height is constrained to 19px.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Heading</strong></th>
+      <th><strong>Font-weight</strong></th>
+      <th><strong>Font-size</strong></th>
+      <th>
+<strong>Font-size-adjust</strong>*</th>
+      <th><strong>Line-height</strong></th>
+      <th><strong>Responsive behavior at &lt;601px</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Meta header</td>
+      <td>500 (Medium)</td>
+      <td>18px</td>
+      <td>0.517</td>
+      <td>22.5px</td>
+      <td>Drops to 16px</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>*See <a href="">Normalization</a> to learn why we use font-size-adjust.</p>
 
                         </div>
                     </div>
@@ -840,7 +926,7 @@ Example of a non heading element:
 
 <p>The eyebrow heading is secondary to and serves to support the main page heading. So it should be concise and shorter than the main page heading.</p>
 
-<p>An example of the eyebrow heading can be found on the <a href="https://www.consumerfinance.gov/owning-a-home/process/prepare/">Buying a House journey pages</a>.</p>
+<p>An example of the eyebrow heading can be found on the <a href="https://www.consumerfinance.gov/owning-a-home/">Buying a House journey pages</a>.</p>
 
             </div>
             
@@ -909,12 +995,31 @@ Example of a non heading element:
                     <div>
                         <h4 class="variation-specs-title">Specs</h4>
                         <div style="padding:40px">
-                            <ul>
-  <li>Avenir Next Demi Bold</li>
-  <li>14px / 18px, 1px letter spacing</li>
-  <li>All caps</li>
-  <li>&lt;601px wide: No change</li>
-</ul>
+                            <table>
+  <thead>
+    <tr>
+      <th><strong>Heading</strong></th>
+      <th><strong>Font-weight</strong></th>
+      <th><strong>Font-size</strong></th>
+      <th>
+<strong>Font-size-adjust</strong>*</th>
+      <th><strong>Line-height</strong></th>
+      <th><strong>Responsive behavior at &lt;601px</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eyebrow heading</td>
+      <td>600 (Semi Bold)</td>
+      <td>14px all caps</td>
+      <td>0.517</td>
+      <td>17.5px, 1px letter spacing</td>
+      <td>No change</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>*See <a href="">Normalization</a> to learn why we use font-size-adjust.</p>
 
                         </div>
                     </div>
@@ -1021,16 +1126,35 @@ Example of a non heading element:
                         <h4 class="variation-specs-title">Specs</h4>
                         <div style="padding:40px">
                             <ul>
-  <li>
-    <p>Slug title: H5</p>
-  </li>
-  <li>
-    <p>5px thick CFPB Green top border that spans the length of the title</p>
-  </li>
-  <li>
-    <p>1px thick Gray 50 top border that spans the width of the module or column</p>
-  </li>
+  <li>5px thick CFPB Green top border that spans the length of the title</li>
+  <li>1px thick Gray 50 top border that spans the width of the module or column</li>
 </ul>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Heading</strong></th>
+      <th><strong>Font-weight</strong></th>
+      <th><strong>Font-size</strong></th>
+      <th>
+<strong>Font-size-adjust</strong>*</th>
+      <th><strong>Line-height</strong></th>
+      <th><strong>Responsive behavior at &lt;601px</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Slug title</td>
+      <td>600 (Semi Bold)</td>
+      <td>H5 (14px all caps)</td>
+      <td>0.517</td>
+      <td>17.5px, 1px letter spacing</td>
+      <td>No change</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>*See <a href="">Normalization</a> to learn why we use font-size-adjust.</p>
 
                         </div>
                     </div>
@@ -1097,7 +1221,7 @@ Example of a non heading element:
             <div class="content-l__col content-l__col-1">
                 <div>
                     <section>
-                        <h2 id="related-items">Related Items</h2>
+                        <h2 id="related-items">Related items</h2>
                         <div class="content__line--wide content__line u-mb20"></div>
                         <ul>
   <li><a href="https://cfpb.github.io/design-system/foundation/paragraphs">Paragraphs</a></li>
@@ -1115,7 +1239,7 @@ Example of a non heading element:
             <div class="content-l__col content-l__col-1">
                 <div>
                     <section>
-                        <h2 id="latest-updates">Latest Updates</h2>
+                        <h2 id="latest-updates">Latest updates</h2>
                         <div class="content__line--wide content__line u-mb20"></div>
                         <strong>Page last edited:</strong>
                         
@@ -1123,8 +1247,8 @@ Example of a non heading element:
                         
                         
                         <a href="https://github.com/cfpb/design-system/commits/main/docs/pages/heading-hierarchy.md">
-                            <time datetime="2025-01-24 16:12:37 -0500">
-                                 4:12:37 PM Jan 24, 2025
+                            <time datetime="2026-03-11 15:03:24 -0400">
+                                 3:03:24 PM Mar 11, 2026
                             </time>
                         </a>
                     </section>
@@ -1164,22 +1288,20 @@ Example of a non heading element:
 
     <div class="block block--sub ds-footer__content">
         <p>
-            <small>
-                We need your help keeping the Design System accurate and up-to-date!
-                If you see something wrong or missing,
-                <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
-                If you can’t make those changes yourself,
-                <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Headings%3A+Add+issue+description">file an issue</a>.
-                If you have a substantial change to an existing page, or a new standard you want to add,
-                <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
-            </small>
+            We need your help keeping the Design System accurate and up-to-date!
+            If you see something wrong or missing,
+            <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
+            If you can’t make those changes yourself,
+            <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Headings%3A+Add+issue+description">file an issue</a>.
+            If you have a substantial change to an existing page, or a new standard you want to add,
+            <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
         </p>
     </div>
 
 </footer>
 
   
-  <script src="/design-system/dist/main.js" charset="utf-8"></script>
+  <script type="module" src="/design-system/dist/main.js" charset="utf-8"></script>
 
   
 

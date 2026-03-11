@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/design-system/dist/main.css">
+  <link rel="stylesheet" href="/design-system/dist/index.css">
   <script>
       // Confirm availability of JS and remove no-js class from html
       var docElement = document.documentElement;
@@ -40,9 +40,33 @@
   <div class="site-header">
 
     <form id="search-form" action="/design-system/search" method="get">
-    <label class="u-visually-hidden" for="search-box">Search:</label>
-    <input type="text" id="search-box" class="a-text-input" name="searchQuery" placeholder="Enter your query">
-    <button class="a-btn" type="submit">Search</button>
+    <cfpb-form-search id="search-box" form="search-form" name="searchQuery">
+        <ul>
+            <li><a href="/design-system/components/alerts">Alerts</a></li>
+            <li><a href="/design-system/components/banner-notification">Banner (notification)</a></li>
+            <li><a href="/design-system/components/banner-us-gov">Banner (US gov)</a></li>
+            <li><a href="/design-system/components/buttons">Buttons</a></li>
+            <li><a href="/design-system/components/checkboxes">Checkboxes</a></li>
+            <li><a href="/design-system/components/date-picker">Date picker</a></li>
+            <li><a href="/design-system/components/expandables">Expandables</a></li>
+            <li><a href="/design-system/components/fieldsets">Fieldsets</a></li>
+            <li><a href="/design-system/components/helper-text">Helper text</a></li>
+            <li><a href="/design-system/components/labels-and-legends">Labels and legends</a></li>
+            <li><a href="/design-system/components/links">Links</a></li>
+            <li><a href="/design-system/components/lists">Lists</a></li>
+            <li><a href="/design-system/components/pagination">Pagination</a></li>
+            <li><a href="/design-system/components/radio-buttons">Radio buttons</a></li>
+            <li><a href="/design-system/components/range-sliders">Range sliders</a></li>
+            <li><a href="/design-system/components/selects">Selects</a></li>
+            <li><a href="/design-system/components/summaries">Summaries</a></li>
+            <li><a href="/design-system/components/tables">Tables</a></li>
+            <li><a href="/design-system/components/tags">Tags</a></li>
+            <li><a href="/design-system/components/taglines">Taglines</a></li>
+            <li><a href="/design-system/components/text-inputs">Text inputs</a></li>
+            <li><a href="/design-system/components/tooltips">Tooltips</a></li>
+            <li><a href="/design-system/components/elements">Web Components</a></li>
+        </ul>
+    </cfpb-form-search>
 </form>
 
 
@@ -417,6 +441,8 @@ image upload in CMS"></p>
     
 
     
+
+    
     
         <section class="sticky-header u-mb45">
 
@@ -441,7 +467,7 @@ image upload in CMS"></p>
             <div class="content-l__col content-l__col-1">
                 <div>
                     <section>
-                        <h2 id="latest-updates">Latest Updates</h2>
+                        <h2 id="latest-updates">Latest updates</h2>
                         <div class="content__line--wide content__line u-mb20"></div>
                         <strong>Page last edited:</strong>
                         
@@ -449,8 +475,8 @@ image upload in CMS"></p>
                         
                         
                         <a href="https://github.com/cfpb/design-system/commits/main/docs/special-pages/updating-this-website.md">
-                            <time datetime="2025-01-24 16:12:37 -0500">
-                                 4:12:37 PM Jan 24, 2025
+                            <time datetime="2026-03-11 15:03:24 -0400">
+                                 3:03:24 PM Mar 11, 2026
                             </time>
                         </a>
                     </section>
@@ -481,22 +507,20 @@ image upload in CMS"></p>
 
     <div class="block block--sub ds-footer__content">
         <p>
-            <small>
-                We need your help keeping the Design System accurate and up-to-date!
-                If you see something wrong or missing,
-                <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
-                If you can’t make those changes yourself,
-                <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Updating%20this%20website%3A+Add+issue+description">file an issue</a>.
-                If you have a substantial change to an existing page, or a new standard you want to add,
-                <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
-            </small>
+            We need your help keeping the Design System accurate and up-to-date!
+            If you see something wrong or missing,
+            <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
+            If you can’t make those changes yourself,
+            <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Updating%20this%20website%3A+Add+issue+description">file an issue</a>.
+            If you have a substantial change to an existing page, or a new standard you want to add,
+            <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
         </p>
     </div>
 
 </footer>
 
   
-  <script src="/design-system/dist/main.js" charset="utf-8"></script>
+  <script type="module" src="/design-system/dist/main.js" charset="utf-8"></script>
 
   
   <script>var PAGES_ALLOWED = {};
@@ -506,7 +530,6 @@ image upload in CMS"></p>
         PAGES_ALLOWED['Atomic components'] = '/design-system/admin/#/collections/pages/entries/atomic-components';
         PAGES_ALLOWED['Banner (notification)'] = '/design-system/admin/#/collections/pages/entries/banner-notification';
         PAGES_ALLOWED['Banner (US gov)'] = '/design-system/admin/#/collections/pages/entries/banner-us-gov';
-        PAGES_ALLOWED['Bar charts'] = '/design-system/admin/#/collections/pages/entries/bar-charts';
         PAGES_ALLOWED['Blocks'] = '/design-system/admin/#/collections/pages/entries/blocks';
         PAGES_ALLOWED['Browse pages'] = '/design-system/admin/#/collections/pages/entries/browse-pages';
         PAGES_ALLOWED['Buttons'] = '/design-system/admin/#/collections/pages/entries/buttons';
@@ -516,12 +539,15 @@ image upload in CMS"></p>
         PAGES_ALLOWED['Color'] = '/design-system/admin/#/collections/pages/entries/color';
         PAGES_ALLOWED['Components'] = '/design-system/admin/#/collections/pages/entries/components';
         PAGES_ALLOWED['Conducting research'] = '/design-system/admin/#/collections/pages/entries/conducting-research-3';
+        PAGES_ALLOWED['Contributing to the CFPB Design System'] = '/design-system/admin/#/collections/pages/entries/contributing-to-the-cfpb-design-system';
         PAGES_ALLOWED['Data visualization guidelines'] = '/design-system/admin/#/collections/pages/entries/data-visualization-1';
         PAGES_ALLOWED['Date picker'] = '/design-system/admin/#/collections/pages/entries/date-picker';
         PAGES_ALLOWED['Design and development'] = '/design-system/admin/#/collections/pages/entries/design-and-development';
+        PAGES_ALLOWED['Design Tokens'] = '/design-system/admin/#/collections/pages/entries/design-tokens';
         PAGES_ALLOWED['Development'] = '/design-system/admin/#/collections/pages/entries/development';
         PAGES_ALLOWED['Document detail pages'] = '/design-system/admin/#/collections/pages/entries/document-detail-pages';
-        PAGES_ALLOWED['E-mail signup forms'] = '/design-system/admin/#/collections/pages/entries/e-mail-signup-forms';
+        PAGES_ALLOWED['Email signup forms'] = '/design-system/admin/#/collections/pages/entries/e-mail-signup-forms';
+        PAGES_ALLOWED['Elements'] = '/design-system/admin/#/collections/pages/entries/elements';
         PAGES_ALLOWED['Expandables'] = '/design-system/admin/#/collections/pages/entries/expandables';
         PAGES_ALLOWED['Featured content module'] = '/design-system/admin/#/collections/pages/entries/featured-content-modules';
         PAGES_ALLOWED['Fieldsets'] = '/design-system/admin/#/collections/pages/entries/fieldsets';
@@ -543,12 +569,10 @@ image upload in CMS"></p>
         PAGES_ALLOWED['Illustration'] = '/design-system/admin/#/collections/pages/entries/illustration';
         PAGES_ALLOWED['Info unit groups'] = '/design-system/admin/#/collections/pages/entries/info-unit-groups-link-blobs';
         PAGES_ALLOWED['Integrating the Design System into your project'] = '/design-system/admin/#/collections/pages/entries/integrating-the-design-system-into-your-project';
-        PAGES_ALLOWED['Interactive charts'] = '/design-system/admin/#/collections/pages/entries/interactive-chart';
         PAGES_ALLOWED['Item introductions'] = '/design-system/admin/#/collections/pages/entries/item-introductions';
         PAGES_ALLOWED['Labels and legends'] = '/design-system/admin/#/collections/pages/entries/labels';
         PAGES_ALLOWED['Landing pages'] = '/design-system/admin/#/collections/pages/entries/landing-pages';
         PAGES_ALLOWED['Learn pages'] = '/design-system/admin/#/collections/pages/entries/learn-pages';
-        PAGES_ALLOWED['Line charts'] = '/design-system/admin/#/collections/pages/entries/line-charts';
         PAGES_ALLOWED['Links'] = '/design-system/admin/#/collections/pages/entries/links';
         PAGES_ALLOWED['Lists'] = '/design-system/admin/#/collections/pages/entries/lists';
         PAGES_ALLOWED['Logo'] = '/design-system/admin/#/collections/pages/entries/logo';
@@ -561,10 +585,10 @@ image upload in CMS"></p>
         PAGES_ALLOWED['Paragraphs'] = '/design-system/admin/#/collections/pages/entries/paragraphs';
         PAGES_ALLOWED['Patterns'] = '/design-system/admin/#/collections/pages/entries/patterns';
         PAGES_ALLOWED['Photography'] = '/design-system/admin/#/collections/pages/entries/photography';
-        PAGES_ALLOWED['Pie charts'] = '/design-system/admin/#/collections/pages/entries/pie-charts';
         PAGES_ALLOWED['Print styles'] = '/design-system/admin/#/collections/pages/entries/print-styles';
         PAGES_ALLOWED['Radio buttons'] = '/design-system/admin/#/collections/pages/entries/radio-buttons';
         PAGES_ALLOWED['Range sliders'] = '/design-system/admin/#/collections/pages/entries/range-sliders';
+        PAGES_ALLOWED['Reference for component states'] = '/design-system/admin/#/collections/pages/entries/reference-for-component-states';
         PAGES_ALLOWED['Sample component page'] = '/design-system/admin/#/collections/pages/entries/sample-component-page';
         PAGES_ALLOWED['Seal'] = '/design-system/admin/#/collections/pages/entries/seal';
         PAGES_ALLOWED['Search'] = '/design-system/admin/#/collections/pages/entries/search-results.html';

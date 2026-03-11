@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/design-system/dist/main.css">
+  <link rel="stylesheet" href="/design-system/dist/index.css">
   <script>
       // Confirm availability of JS and remove no-js class from html
       var docElement = document.documentElement;
@@ -40,9 +40,33 @@
   <div class="site-header">
 
     <form id="search-form" action="/design-system/search" method="get">
-    <label class="u-visually-hidden" for="search-box">Search:</label>
-    <input type="text" id="search-box" class="a-text-input" name="searchQuery" placeholder="Enter your query">
-    <button class="a-btn" type="submit">Search</button>
+    <cfpb-form-search id="search-box" form="search-form" name="searchQuery">
+        <ul>
+            <li><a href="/design-system/components/alerts">Alerts</a></li>
+            <li><a href="/design-system/components/banner-notification">Banner (notification)</a></li>
+            <li><a href="/design-system/components/banner-us-gov">Banner (US gov)</a></li>
+            <li><a href="/design-system/components/buttons">Buttons</a></li>
+            <li><a href="/design-system/components/checkboxes">Checkboxes</a></li>
+            <li><a href="/design-system/components/date-picker">Date picker</a></li>
+            <li><a href="/design-system/components/expandables">Expandables</a></li>
+            <li><a href="/design-system/components/fieldsets">Fieldsets</a></li>
+            <li><a href="/design-system/components/helper-text">Helper text</a></li>
+            <li><a href="/design-system/components/labels-and-legends">Labels and legends</a></li>
+            <li><a href="/design-system/components/links">Links</a></li>
+            <li><a href="/design-system/components/lists">Lists</a></li>
+            <li><a href="/design-system/components/pagination">Pagination</a></li>
+            <li><a href="/design-system/components/radio-buttons">Radio buttons</a></li>
+            <li><a href="/design-system/components/range-sliders">Range sliders</a></li>
+            <li><a href="/design-system/components/selects">Selects</a></li>
+            <li><a href="/design-system/components/summaries">Summaries</a></li>
+            <li><a href="/design-system/components/tables">Tables</a></li>
+            <li><a href="/design-system/components/tags">Tags</a></li>
+            <li><a href="/design-system/components/taglines">Taglines</a></li>
+            <li><a href="/design-system/components/text-inputs">Text inputs</a></li>
+            <li><a href="/design-system/components/tooltips">Tooltips</a></li>
+            <li><a href="/design-system/components/elements">Web Components</a></li>
+        </ul>
+    </cfpb-form-search>
 </form>
 
 
@@ -322,6 +346,8 @@
     
 
     
+
+    
     
     <section class="o-variation-group" id="typefaces">
 
@@ -333,7 +359,7 @@
 
         
         <div class="o-variation-group__description">
-            <p>Avenir Next is the primary brand typeface and can be used across all formats from print to digital. Its round and geometric letterforms are approachable and modern.</p>
+            <p>In July 2025, we updated our typeface from Avenir Next to Source Sans 3, a typeface included in the <a href="https://designsystem.digital.gov/components/typography/">U.S. Web Design System</a>. With letters that are slender but open, Source Sans 3 has a simple and approachable look.</p>
 
         </div>
         
@@ -358,7 +384,7 @@
             <!-- Live code example -->
             
             <div class="a-live__code">
-                <h3 style="font-weight: 600;letter-spacing: 1px;">Avenir Next Demi Bold</h3>
+                <h3 style="font-weight: 600;letter-spacing: 1px;">Source Sans 3 Semi Bold</h3>
 
 <h4 style="font-weight: 600;letter-spacing: 1px;">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
 abcdefghijklmnopqrstuvwxyz<br>
@@ -400,7 +426,7 @@ abcdefghijklmnopqrstuvwxyz<br>
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
-                            <pre><code class="language-html">&lt;h3 style="font-weight: 600;letter-spacing: 1px;"&gt;Avenir Next Demi Bold&lt;/h3&gt;
+                            <pre><code class="language-html">&lt;h3 style="font-weight: 600;letter-spacing: 1px;"&gt;Source Sans 3 Semi Bold&lt;/h3&gt;
 
 &lt;h4 style="font-weight: 600;letter-spacing: 1px;"&gt;ABCDEFGHIJKLMNOPQRSTUVWXYZ&lt;br&gt;
 abcdefghijklmnopqrstuvwxyz&lt;br&gt;
@@ -443,9 +469,9 @@ abcdefghijklmnopqrstuvwxyz&lt;br&gt;
             <!-- Live code example -->
             
             <div class="a-live__code">
-                <h3 style="font-weight: 500;">Avenir Next Medium</h3>
+                <h3 style="font-weight: 500;">Source Sans 3 Medium</h3>
 
-<h4 style="font-weight: 500;">
+<h4>
 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
 abcdefghijklmnopqrstuvwxyz<br>
 0123456789</h4>
@@ -463,15 +489,15 @@ abcdefghijklmnopqrstuvwxyz<br>
             
 
             <div class="a-toggle__code">
-                <button href="#details-h3-style-font-weight-500-avenir--2" class="a-btn a-btn--link" data-toggle-details="show">Show details</button>
-                <button href="#details-h3-style-font-weight-500-avenir--2" class="a-btn a-btn--link u-hidden" data-toggle-details="hide">Hide details</button>
+                <button href="#details-h3-style-font-weight-500-source--2" class="a-btn a-btn--link" data-toggle-details="show">Show details</button>
+                <button href="#details-h3-style-font-weight-500-source--2" class="a-btn a-btn--link u-hidden" data-toggle-details="hide">Hide details</button>
             </div>
 
-            <div class="m-tabs u-hidden" id="details-h3-style-font-weight-500-avenir--2">
+            <div class="m-tabs u-hidden" id="details-h3-style-font-weight-500-source--2">
                 <ul class="m-tabs__list">
                     
                     <li class="m-tabs__list-item m-tabs__list-item-selected">
-                        <a class="m-tabs__tab" href="#details-h3-style-font-weight-500-avenir--html-code-snippet-2">
+                        <a class="m-tabs__tab" href="#details-h3-style-font-weight-500-source--html-code-snippet-2">
                             HTML code snippet
                         </a>
                     </li>
@@ -483,13 +509,13 @@ abcdefghijklmnopqrstuvwxyz<br>
 
                 <!-- HTML snippet -->
                 
-                <section class="m-tabs__panel" id="details-h3-style-font-weight-500-avenir--html-code-snippet-2">
+                <section class="m-tabs__panel" id="details-h3-style-font-weight-500-source--html-code-snippet-2">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
-                            <pre><code class="language-html">&lt;h3 style="font-weight: 500;"&gt;Avenir Next Medium&lt;/h3&gt;
+                            <pre><code class="language-html">&lt;h3 style="font-weight: 500;"&gt;Source Sans 3 Medium&lt;/h3&gt;
 
-&lt;h4 style="font-weight: 500;"&gt;
+&lt;h4&gt;
 ABCDEFGHIJKLMNOPQRSTUVWXYZ&lt;br&gt;
 abcdefghijklmnopqrstuvwxyz&lt;br&gt;
 0123456789&lt;/h4&gt;</code></pre>
@@ -531,9 +557,9 @@ abcdefghijklmnopqrstuvwxyz&lt;br&gt;
             <!-- Live code example -->
             
             <div class="a-live__code">
-                <h3>Avenir Next Regular</h3>
+                <h3>Source Sans 3 Regular</h3>
 
-<h4>
+<h4 style="font-weight: 400;">
 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
 abcdefghijklmnopqrstuvwxyz<br>
 0123456789</h4>
@@ -548,15 +574,15 @@ abcdefghijklmnopqrstuvwxyz<br>
             
 
             <div class="a-toggle__code">
-                <button href="#details-h3-avenir-next-regular-h3-h4-abc-3" class="a-btn a-btn--link" data-toggle-details="show">Show details</button>
-                <button href="#details-h3-avenir-next-regular-h3-h4-abc-3" class="a-btn a-btn--link u-hidden" data-toggle-details="hide">Hide details</button>
+                <button href="#details-h3-source-sans-3-regular-h3-h4-s-3" class="a-btn a-btn--link" data-toggle-details="show">Show details</button>
+                <button href="#details-h3-source-sans-3-regular-h3-h4-s-3" class="a-btn a-btn--link u-hidden" data-toggle-details="hide">Hide details</button>
             </div>
 
-            <div class="m-tabs u-hidden" id="details-h3-avenir-next-regular-h3-h4-abc-3">
+            <div class="m-tabs u-hidden" id="details-h3-source-sans-3-regular-h3-h4-s-3">
                 <ul class="m-tabs__list">
                     
                     <li class="m-tabs__list-item m-tabs__list-item-selected">
-                        <a class="m-tabs__tab" href="#details-h3-avenir-next-regular-h3-h4-abc-html-code-snippet-3">
+                        <a class="m-tabs__tab" href="#details-h3-source-sans-3-regular-h3-h4-s-html-code-snippet-3">
                             HTML code snippet
                         </a>
                     </li>
@@ -568,13 +594,13 @@ abcdefghijklmnopqrstuvwxyz<br>
 
                 <!-- HTML snippet -->
                 
-                <section class="m-tabs__panel" id="details-h3-avenir-next-regular-h3-h4-abc-html-code-snippet-3">
+                <section class="m-tabs__panel" id="details-h3-source-sans-3-regular-h3-h4-s-html-code-snippet-3">
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
-                            <pre><code class="language-html">&lt;h3&gt;Avenir Next Regular&lt;/h3&gt;
+                            <pre><code class="language-html">&lt;h3&gt;Source Sans 3 Regular&lt;/h3&gt;
 
-&lt;h4&gt;
+&lt;h4 style="font-weight: 400;"&gt;
 ABCDEFGHIJKLMNOPQRSTUVWXYZ&lt;br&gt;
 abcdefghijklmnopqrstuvwxyz&lt;br&gt;
 0123456789&lt;/h4&gt;</code></pre>
@@ -614,17 +640,21 @@ abcdefghijklmnopqrstuvwxyz&lt;br&gt;
                 </p>
 <p>Readable text allows users to efficiently read and take in textual information. Text that is not readable turns off readers or makes it challenging for them to stay focused. The following guidelines promote good readability.</p>
 
+<h3 id="normalization">Normalization</h3>
+
+<p>As the U.S. Web Design System states, <a href="https://designsystem.digital.gov/design-tokens/typesetting/overview/">typefaces vary in optical size</a>. Source Sans 3 is more condensed and has a smaller optical appearance than our previous typeface, Avenir Next. To address this difference and ensure our site’s components and readability remain intact, we adjusted Source Sans 3’s x-height to be optically closer to Avenir Next’s x-height. To accomplish this, we used a <a href="https://www.w3.org/TR/css-fonts-3/#font-size-adjust-prop">font-size-adjust CSS property</a>.</p>
+
 <h3 id="alignment">Alignment</h3>
 
 <p>Typography should be set flush left. This provides the eye a constant starting point for each line, making text easier to read.</p>
 
-<p><img src="/design-system/images/uploads/type_alignment.png" alt="Alignment"></p>
+<p><img src="/design-system/images/uploads/fonts_alignment.png" alt="Alignment"></p>
 
 <h3 id="line-height">Line height</h3>
 
 <p>Ample space between lines of type promotes an open feeling and lends flow to body copy. When setting body copy, the leading should be 1.375 times the type size, or 37.5% larger.</p>
 
-<p><img src="/design-system/images/uploads/type_line_height.png" alt="Line height"></p>
+<p><img src="/design-system/images/uploads/fonts_line_height.png" alt="Line height"></p>
 
 <h3 id="line-length">Line length</h3>
 
@@ -632,7 +662,7 @@ abcdefghijklmnopqrstuvwxyz&lt;br&gt;
 
 <p>In digital materials, readers are afforded some level of control over line length by narrowing their browser window or changing the type size display on their devices. In printed materials, readers do not have this control. For this reason, special effort should be made to use a line length as close as possible to 66 characters in printed materials. This can be achieved by using a multi-column layout or larger margins.</p>
 
-<p><img src="/design-system/images/uploads/line_length_040121.png" alt="Line length"></p>
+<p><img src="/design-system/images/uploads/fonts_line_length.png" alt="Line length"></p>
 
 <h3 id="spacing">Spacing</h3>
 
@@ -642,25 +672,25 @@ abcdefghijklmnopqrstuvwxyz&lt;br&gt;
 
 <p>When a heading is followed by paragraph text, include 30px of space below Display and 15px below Headings 1–6.</p>
 
-<p><img src="/design-system/images/uploads/fonts_heading_body.png" alt=""></p>
+<p><img src="/design-system/images/uploads/fonts_heading_followed_by_body_copy.png" alt=""></p>
 
 <h4 id="body-copy-followed-by-a-heading">Body copy followed by a heading</h4>
 
 <p>When body copy is followed by a heading, include 45px of space above Heading 2 and 30px above Headings 3–6.</p>
 
-<p><img src="/design-system/images/uploads/fonts_body_heading.png" alt="Body copy followed by heading"></p>
+<p><img src="/design-system/images/uploads/fonts_body_copy_followed_by_heading.png" alt="Body copy followed by heading"></p>
 
 <h4 id="heading-followed-by-a-heading">Heading followed by a heading</h4>
 
 <p>For stacked headings, include 30 px of space after the primary heading.</p>
 
-<p><img src="/design-system/images/uploads/type_heading_heading.png" alt="Heading followed by heading"></p>
+<p><img src="/design-system/images/uploads/fonts_heading_followed_by_heading.png" alt="Heading followed by heading"></p>
 
 <h4 id="body-copy-spacing">Body copy spacing</h4>
 
 <p>For multiple paragraphs within the same section set the space between paragraphs to 15px.</p>
 
-<p><img src="" alt=""></p>
+<p><img src="/design-system/images/uploads/fonts_body_copy_spacing.png" alt="Body copy spacing"></p>
 
                 
             
@@ -677,8 +707,6 @@ abcdefghijklmnopqrstuvwxyz&lt;br&gt;
             <div class="content__line content__line--wide u-mb20"></div>
             <p>
                 </p>
-<p><img src="" alt=""></p>
-
 <p>Web Content Accessibility (WCAG) standards ensure that content is accessible by everyone, regardless of any disability or user device. To learn more, refer to the <a href="https://www.section508.gov/">http://www.section508.gov</a>.</p>
 
 <h3 id="dont-use-type-in-illustrations-or-graphics">Don’t use type in illustrations or graphics</h3>
@@ -697,11 +725,11 @@ abcdefghijklmnopqrstuvwxyz&lt;br&gt;
 
 <h4 id="black-type-on-colored-backgrounds">Black type on colored backgrounds</h4>
 
-<p>Black type is accessible on all brand colors with 20% saturation or below when using at least 14pt type. Hex values for those colors are shown in parentheses in the image below; for their RGB equivalents, <a href="https://cfpb.github.io/design-system/foundation/color#tints">visit our Color page</a>.</p>
+<p>Black type is accessible on all brand colors with 20% saturation or below when using at least 14pt type. <a href="https://cfpb.github.io/design-system/foundation/color#tints">Visit our Color page</a> for hex and RGB values.</p>
 
 <p>A few colors allow for slightly darker saturations while still maintaining accessibility. If you’re looking to use a combination not listed here, check <a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a>  to verify accessibility.</p>
 
-<p><img src="/design-system/images/uploads/black_type_revised.png" alt="Chart showing accessible combinations of black type on brand colors with 20% saturation"></p>
+<p><img src="/design-system/images/uploads/black_type.png" alt="Chart showing accessible combinations of black type on brand colors with 20% saturation"></p>
 
 <h4 id="white-type-on-colored-backgrounds">White type on colored backgrounds</h4>
 
@@ -712,9 +740,9 @@ abcdefghijklmnopqrstuvwxyz&lt;br&gt;
   <li>White type is not accessible on any CFPB shade of gold.</li>
 </ul>
 
-<p>The graphic below shows accessible combinations of white type on CFPB brand colors at 100% saturation. Hex values for those colors are shown in parentheses; for their RGB equivalents, <a href="https://cfpb.github.io/design-system/foundation/color#tints">visit our Color page</a>.</p>
+<p>The graphic below shows accessible combinations of white type on CFPB brand colors at 100% saturation. <a href="">Visit our Color page</a> for hex and RGB values.</p>
 
-<p><img src="/design-system/images/uploads/white_type_revised.png" alt="Chart showing accessible combinations of white type on brand colors at 100% saturation"></p>
+<p><img src="/design-system/images/uploads/white_type.png" alt="Chart showing accessible combinations of white type on brand colors at 100% saturation"></p>
 
             
         </section>
@@ -727,7 +755,7 @@ abcdefghijklmnopqrstuvwxyz&lt;br&gt;
             <div class="content-l__col content-l__col-1">
                 <div>
                     <section>
-                        <h2 id="related-items">Related Items</h2>
+                        <h2 id="related-items">Related items</h2>
                         <div class="content__line--wide content__line u-mb20"></div>
                         <ul>
   <li><a href="https://cfpb.github.io/design-system/foundation/headings">Headings</a></li>
@@ -745,7 +773,7 @@ abcdefghijklmnopqrstuvwxyz&lt;br&gt;
             <div class="content-l__col content-l__col-1">
                 <div>
                     <section>
-                        <h2 id="latest-updates">Latest Updates</h2>
+                        <h2 id="latest-updates">Latest updates</h2>
                         <div class="content__line--wide content__line u-mb20"></div>
                         <strong>Page last edited:</strong>
                         
@@ -753,8 +781,8 @@ abcdefghijklmnopqrstuvwxyz&lt;br&gt;
                         
                         
                         <a href="https://github.com/cfpb/design-system/commits/main/docs/pages/typography.md">
-                            <time datetime="2025-01-24 16:12:37 -0500">
-                                 4:12:37 PM Jan 24, 2025
+                            <time datetime="2026-03-11 15:03:24 -0400">
+                                 3:03:24 PM Mar 11, 2026
                             </time>
                         </a>
                     </section>
@@ -794,22 +822,20 @@ abcdefghijklmnopqrstuvwxyz&lt;br&gt;
 
     <div class="block block--sub ds-footer__content">
         <p>
-            <small>
-                We need your help keeping the Design System accurate and up-to-date!
-                If you see something wrong or missing,
-                <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
-                If you can’t make those changes yourself,
-                <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Fonts%3A+Add+issue+description">file an issue</a>.
-                If you have a substantial change to an existing page, or a new standard you want to add,
-                <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
-            </small>
+            We need your help keeping the Design System accurate and up-to-date!
+            If you see something wrong or missing,
+            <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
+            If you can’t make those changes yourself,
+            <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Fonts%3A+Add+issue+description">file an issue</a>.
+            If you have a substantial change to an existing page, or a new standard you want to add,
+            <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
         </p>
     </div>
 
 </footer>
 
   
-  <script src="/design-system/dist/main.js" charset="utf-8"></script>
+  <script type="module" src="/design-system/dist/main.js" charset="utf-8"></script>
 
   
 

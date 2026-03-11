@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/design-system/dist/main.css">
+  <link rel="stylesheet" href="/design-system/dist/index.css">
   <script>
       // Confirm availability of JS and remove no-js class from html
       var docElement = document.documentElement;
@@ -40,9 +40,33 @@
   <div class="site-header">
 
     <form id="search-form" action="/design-system/search" method="get">
-    <label class="u-visually-hidden" for="search-box">Search:</label>
-    <input type="text" id="search-box" class="a-text-input" name="searchQuery" placeholder="Enter your query">
-    <button class="a-btn" type="submit">Search</button>
+    <cfpb-form-search id="search-box" form="search-form" name="searchQuery">
+        <ul>
+            <li><a href="/design-system/components/alerts">Alerts</a></li>
+            <li><a href="/design-system/components/banner-notification">Banner (notification)</a></li>
+            <li><a href="/design-system/components/banner-us-gov">Banner (US gov)</a></li>
+            <li><a href="/design-system/components/buttons">Buttons</a></li>
+            <li><a href="/design-system/components/checkboxes">Checkboxes</a></li>
+            <li><a href="/design-system/components/date-picker">Date picker</a></li>
+            <li><a href="/design-system/components/expandables">Expandables</a></li>
+            <li><a href="/design-system/components/fieldsets">Fieldsets</a></li>
+            <li><a href="/design-system/components/helper-text">Helper text</a></li>
+            <li><a href="/design-system/components/labels-and-legends">Labels and legends</a></li>
+            <li><a href="/design-system/components/links">Links</a></li>
+            <li><a href="/design-system/components/lists">Lists</a></li>
+            <li><a href="/design-system/components/pagination">Pagination</a></li>
+            <li><a href="/design-system/components/radio-buttons">Radio buttons</a></li>
+            <li><a href="/design-system/components/range-sliders">Range sliders</a></li>
+            <li><a href="/design-system/components/selects">Selects</a></li>
+            <li><a href="/design-system/components/summaries">Summaries</a></li>
+            <li><a href="/design-system/components/tables">Tables</a></li>
+            <li><a href="/design-system/components/tags">Tags</a></li>
+            <li><a href="/design-system/components/taglines">Taglines</a></li>
+            <li><a href="/design-system/components/text-inputs">Text inputs</a></li>
+            <li><a href="/design-system/components/tooltips">Tooltips</a></li>
+            <li><a href="/design-system/components/elements">Web Components</a></li>
+        </ul>
+    </cfpb-form-search>
 </form>
 
 
@@ -211,6 +235,20 @@
                     
                 </div>
                 
+                    <div class="ds-nav ds-nav-2">
+                        <div class="h5">Web Components (beta)</div>
+                        
+                        <ul class="m-list m-list--links">
+                        
+                            <li class="m-list__item">
+                                <a class="a-link a-link--jump" href="/design-system/components/elements">Elements</a>
+                            </li>
+                        
+                        </ul>
+                    
+                    
+                </div>
+                
             
             </div>
         </li>
@@ -314,6 +352,8 @@
     
 
     
+
+    
     
     <section class="o-variation-group" id="types">
 
@@ -352,65 +392,12 @@
             <!-- Live code example -->
             
             <div class="a-live__code">
-                <!--Enabled state-->
-
-<div class="m-form-field">
+                <div class="m-form-field">
     <label class="a-label a-label--heading" for="test_select_enabled">
-        Enabled
+        Example label
     </label>
     <div class="a-select">
         <select id="test_select_enabled">
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-            <option value="option4">Option 4</option>
-        </select>
-    </div>
-</div>
-
-<br>
-
-<!--Hover state-->
-<div class="m-form-field">
-    <label class="a-label a-label--heading" for="test_select__hover">
-       Hover
-    </label>
-    <div class="a-select">
-        <select id="test_select__hover" class="hover">
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-            <option value="option4">Option 4</option>
-        </select>
-    </div>
-</div>
-
-<br>
-
-<!--Focus state-->
-
-<div class="m-form-field">
-    <label class="a-label a-label--heading" for="test_select__focus">
-        Focus
-    </label>
-    <div class="a-select">
-        <select id="test_select__focus" class="focus">
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-            <option value="option4">Option 4</option>
-        </select>
-    </div>
-</div>
-
-<br>
-
-<!--Disabled state-->
-
-<div class="m-form-field">
-    <label class="a-label a-label--heading" for="test_select__disabled">Disabled</label>
-    <div class="a-select a-select--disabled">
-        <select id="test_select__disabled" disabled>
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
@@ -453,65 +440,12 @@
                     <div class="variation-code-snippet">
                         <h4 class="variation-code-snippet-title">HTML code snippet</h4>
                         <div class="source-code">
-                            <pre><code class="language-html">&lt;!--Enabled state--&gt;
-
-&lt;div class="m-form-field"&gt;
+                            <pre><code class="language-html">&lt;div class="m-form-field"&gt;
     &lt;label class="a-label a-label--heading" for="test_select_enabled"&gt;
-        Enabled
+        Example label
     &lt;/label&gt;
     &lt;div class="a-select"&gt;
         &lt;select id="test_select_enabled"&gt;
-            &lt;option value="option1"&gt;Option 1&lt;/option&gt;
-            &lt;option value="option2"&gt;Option 2&lt;/option&gt;
-            &lt;option value="option3"&gt;Option 3&lt;/option&gt;
-            &lt;option value="option4"&gt;Option 4&lt;/option&gt;
-        &lt;/select&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;br&gt;
-
-&lt;!--Hover state--&gt;
-&lt;div class="m-form-field"&gt;
-    &lt;label class="a-label a-label--heading" for="test_select__hover"&gt;
-       Hover
-    &lt;/label&gt;
-    &lt;div class="a-select"&gt;
-        &lt;select id="test_select__hover" class="hover"&gt;
-            &lt;option value="option1"&gt;Option 1&lt;/option&gt;
-            &lt;option value="option2"&gt;Option 2&lt;/option&gt;
-            &lt;option value="option3"&gt;Option 3&lt;/option&gt;
-            &lt;option value="option4"&gt;Option 4&lt;/option&gt;
-        &lt;/select&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;br&gt;
-
-&lt;!--Focus state--&gt;
-
-&lt;div class="m-form-field"&gt;
-    &lt;label class="a-label a-label--heading" for="test_select__focus"&gt;
-        Focus
-    &lt;/label&gt;
-    &lt;div class="a-select"&gt;
-        &lt;select id="test_select__focus" class="focus"&gt;
-            &lt;option value="option1"&gt;Option 1&lt;/option&gt;
-            &lt;option value="option2"&gt;Option 2&lt;/option&gt;
-            &lt;option value="option3"&gt;Option 3&lt;/option&gt;
-            &lt;option value="option4"&gt;Option 4&lt;/option&gt;
-        &lt;/select&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;br&gt;
-
-&lt;!--Disabled state--&gt;
-
-&lt;div class="m-form-field"&gt;
-    &lt;label class="a-label a-label--heading" for="test_select__disabled"&gt;Disabled&lt;/label&gt;
-    &lt;div class="a-select a-select--disabled"&gt;
-        &lt;select id="test_select__disabled" disabled&gt;
             &lt;option value="option1"&gt;Option 1&lt;/option&gt;
             &lt;option value="option2"&gt;Option 2&lt;/option&gt;
             &lt;option value="option3"&gt;Option 3&lt;/option&gt;
@@ -566,9 +500,9 @@
             <div class="a-live__code">
                 <div class="m-form-field">
     <label class="a-label a-label--heading" for="test_select__multiple">
-        Label
+        Example label
     </label>
-    <select class="o-multiselect" id="test_select__multiple" multiple>
+    <select class="o-multiselect" id="test_select__multiple" multiple data-placeholder="Select an option">
         <option value="option1" selected>Option 1</option>
         <option value="option2">Option 2</option>
         <option value="option3">Option 3</option>
@@ -622,9 +556,9 @@
                         <div class="source-code">
                             <pre><code class="language-html">&lt;div class="m-form-field"&gt;
     &lt;label class="a-label a-label--heading" for="test_select__multiple"&gt;
-        Label
+        Example label
     &lt;/label&gt;
-    &lt;select class="o-multiselect" id="test_select__multiple" multiple&gt;
+    &lt;select class="o-multiselect" id="test_select__multiple" multiple data-placeholder="Select an option"&gt;
         &lt;option value="option1" selected&gt;Option 1&lt;/option&gt;
         &lt;option value="option2"&gt;Option 2&lt;/option&gt;
         &lt;option value="option3"&gt;Option 3&lt;/option&gt;
@@ -745,7 +679,7 @@
             <div class="content-l__col content-l__col-1">
                 <div>
                     <section>
-                        <h2 id="latest-updates">Latest Updates</h2>
+                        <h2 id="latest-updates">Latest updates</h2>
                         <div class="content__line--wide content__line u-mb20"></div>
                         <strong>Page last edited:</strong>
                         
@@ -753,8 +687,8 @@
                         
                         
                         <a href="https://github.com/cfpb/design-system/commits/main/docs/pages/selects.md">
-                            <time datetime="2025-01-24 16:12:37 -0500">
-                                 4:12:37 PM Jan 24, 2025
+                            <time datetime="2026-03-11 15:03:24 -0400">
+                                 3:03:24 PM Mar 11, 2026
                             </time>
                         </a>
                     </section>
@@ -794,22 +728,20 @@
 
     <div class="block block--sub ds-footer__content">
         <p>
-            <small>
-                We need your help keeping the Design System accurate and up-to-date!
-                If you see something wrong or missing,
-                <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
-                If you can’t make those changes yourself,
-                <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Selects%3A+Add+issue+description">file an issue</a>.
-                If you have a substantial change to an existing page, or a new standard you want to add,
-                <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
-            </small>
+            We need your help keeping the Design System accurate and up-to-date!
+            If you see something wrong or missing,
+            <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
+            If you can’t make those changes yourself,
+            <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Selects%3A+Add+issue+description">file an issue</a>.
+            If you have a substantial change to an existing page, or a new standard you want to add,
+            <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
         </p>
     </div>
 
 </footer>
 
   
-  <script src="/design-system/dist/main.js" charset="utf-8"></script>
+  <script type="module" src="/design-system/dist/main.js" charset="utf-8"></script>
 
   
 

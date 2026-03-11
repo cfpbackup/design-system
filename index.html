@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/design-system/dist/main.css">
+  <link rel="stylesheet" href="/design-system/dist/index.css">
   <script>
       // Confirm availability of JS and remove no-js class from html
       var docElement = document.documentElement;
@@ -40,9 +40,33 @@
   <div class="site-header">
 
     <form id="search-form" action="/design-system/search" method="get">
-    <label class="u-visually-hidden" for="search-box">Search:</label>
-    <input type="text" id="search-box" class="a-text-input" name="searchQuery" placeholder="Enter your query">
-    <button class="a-btn" type="submit">Search</button>
+    <cfpb-form-search id="search-box" form="search-form" name="searchQuery">
+        <ul>
+            <li><a href="/design-system/components/alerts">Alerts</a></li>
+            <li><a href="/design-system/components/banner-notification">Banner (notification)</a></li>
+            <li><a href="/design-system/components/banner-us-gov">Banner (US gov)</a></li>
+            <li><a href="/design-system/components/buttons">Buttons</a></li>
+            <li><a href="/design-system/components/checkboxes">Checkboxes</a></li>
+            <li><a href="/design-system/components/date-picker">Date picker</a></li>
+            <li><a href="/design-system/components/expandables">Expandables</a></li>
+            <li><a href="/design-system/components/fieldsets">Fieldsets</a></li>
+            <li><a href="/design-system/components/helper-text">Helper text</a></li>
+            <li><a href="/design-system/components/labels-and-legends">Labels and legends</a></li>
+            <li><a href="/design-system/components/links">Links</a></li>
+            <li><a href="/design-system/components/lists">Lists</a></li>
+            <li><a href="/design-system/components/pagination">Pagination</a></li>
+            <li><a href="/design-system/components/radio-buttons">Radio buttons</a></li>
+            <li><a href="/design-system/components/range-sliders">Range sliders</a></li>
+            <li><a href="/design-system/components/selects">Selects</a></li>
+            <li><a href="/design-system/components/summaries">Summaries</a></li>
+            <li><a href="/design-system/components/tables">Tables</a></li>
+            <li><a href="/design-system/components/tags">Tags</a></li>
+            <li><a href="/design-system/components/taglines">Taglines</a></li>
+            <li><a href="/design-system/components/text-inputs">Text inputs</a></li>
+            <li><a href="/design-system/components/tooltips">Tooltips</a></li>
+            <li><a href="/design-system/components/elements">Web Components</a></li>
+        </ul>
+    </cfpb-form-search>
 </form>
 
 
@@ -205,7 +229,33 @@
 
 <h2 id="getting-started">Getting started</h2>
 
-<p>Our <a href="https://cfpb.github.io/design-system/general-principles">general principles</a> form the strategic underpinnings for the CFPB’s design and development standards. Our <a href="https://cfpb.github.io/design-system/guidelines/accessibility-principles">accessibility principles</a> lay the foundation for ensuring that our web content is available for all users.</p>
+<p>Start with our <a href="https://cfpb.github.io/design-system/general-principles">general principles</a>, which form the strategic underpinnings for the CFPB’s design and development standards. Also check out our <a href="https://cfpb.github.io/design-system/guidelines/accessibility-principles">accessibility principles</a>, which lay the foundation for ensuring that our web content is available for all users.</p>
+
+<h3 id="for-developers">For developers</h3>
+
+<div class="content-50 content-last">
+
+  <h4 id="setup-and-contribution">Setup and contribution</h4>
+  <p>The Design System provides a set of modular HTML, CSS, and JavaScript patterns that can be integrated into your project. <a href="https://cfpb.github.io/design-system/development/integrating-the-design-system-into-your-project">Integrate the Design System into your project</a>.</p>
+  <p>
+Learn how to contribute to the Design System code base and update the documentation.  <a href="https://github.com/cfpb/design-system/blob/main/CONTRIBUTING.md">Get started</a>.
+</p>
+</div>
+
+<div class="content-50 content-last">
+
+  <h4 id="using-source-code">Using source code</h4>
+
+  <p>The Design System also includes the source code for the common components that power the design of <a href="https://www.consumerfinance.gov">consumerfinance.gov</a>.</p>
+  <p>
+<a href="https://github.com/cfpb/design-system">View source code on GitHub</a></p>
+</div>
+
+<p><br></p>
+
+<h3 id="for-designers">For designers</h3>
+
+<p>Check out <a href="https://www.figma.com/community/file/1487539003249310850">CFPB Design System</a> in the Figma Community.</p>
 
 <p><br></p>
 
@@ -256,29 +306,6 @@
 <p><br>
 <br></p>
 
-<h2 id="get-started-as-a-developer">Get started as a developer</h2>
-
-<div class="content-50 content-last">
-
-  <h3 id="setup-and-contribution">Setup and contribution</h3>
-  <p>The Design System provides a set of modular HTML, CSS, and JavaScript patterns that can be integrated into your project. <a href="https://cfpb.github.io/design-system/development/integrating-the-design-system-into-your-project">Integrate the Design System into your project</a>.</p>
-  <p>
-Learn how to contribute to the Design System code base and update the documentation.  <a href="https://github.com/cfpb/design-system/blob/main/CONTRIBUTING.md">Get started</a>.
-</p>
-</div>
-
-<div class="content-50 content-last">
-
-  <h3 id="using-source-code">Using source code</h3>
-
-  <p>The Design System also includes the source code for the common components that power the design of <a href="https://www.consumerfinance.gov">consumerfinance.gov</a>.</p>
-  <p>
-<a href="https://github.com/cfpb/design-system">View source code on GitHub</a></p>
-</div>
-
-<p><br>
-<br></p>
-
 <h2 id="contribute-to-the-design-system">Contribute to the Design System</h2>
 
 <p>We strongly encourage you to participate in the growth and maintenance of the Design System. To make contribution easier, the Design System is built on a tool called Decap CMS, which allows for editing of pages in a web browser, without needing to use git or other command-line tools.</p>
@@ -296,10 +323,12 @@ As a work of the United States government, all code is open source and in the pu
 
 <p>All content, apart from CFPB trademarked properties, has been released as open source under the CC0 1.0 Universal Public Domain Dedication, and we’d love for other agencies, developers, or groups to adapt it for their own use.</p>
 
-<h4 class="h5">Trademark Notice</h4>
-<p><small>The CFPB’s logo and the standard characters Consumer Financial Protection Bureau, CFPB, Know Before You Owe, and Money as You Grow are registered trademarks owned by the CFPB. Nothing on this website shall be construed as granting any license to use any trademark displayed on the website without the express written permission of the CFPB. Your use of these registered trademarks must comply with intellectual property laws. You may not use the CFPB trademarks to state or imply an association with or endorsement of your goods, services, or activities, nor in any manner that infringes upon the CFPB trademarks. Requests to use the CFPB trademarks should be made to the Office of the General Counsel, <a href="mailto:cfpb_ip@cfpb.gov">cfpb_ip@cfpb.gov</a>.</small></p>
+<h4 class="h5">Trademark notice</h4>
+<p>The CFPB’s logo and the standard characters Consumer Financial Protection Bureau, CFPB, Know Before You Owe, and Money as You Grow are registered trademarks owned by the CFPB. Nothing on this website shall be construed as granting any license to use any trademark displayed on the website without the express written permission of the CFPB. Your use of these registered trademarks must comply with intellectual property laws. You may not use the CFPB trademarks to state or imply an association with or endorsement of your goods, services, or activities, nor in any manner that infringes upon the CFPB trademarks. Requests to use the CFPB trademarks should be made to the Office of the General Counsel, <a href="mailto:cfpb_ip@cfpb.gov">cfpb_ip@cfpb.gov</a>.</p>
 
     </section>
+    
+
     
 
     
@@ -342,7 +371,7 @@ As a work of the United States government, all code is open source and in the pu
 
 
   
-  <script src="/design-system/dist/main.js" charset="utf-8"></script>
+  <script type="module" src="/design-system/dist/main.js" charset="utf-8"></script>
 
   
 

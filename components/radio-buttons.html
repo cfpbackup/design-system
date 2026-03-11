@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/design-system/dist/main.css">
+  <link rel="stylesheet" href="/design-system/dist/index.css">
   <script>
       // Confirm availability of JS and remove no-js class from html
       var docElement = document.documentElement;
@@ -40,9 +40,33 @@
   <div class="site-header">
 
     <form id="search-form" action="/design-system/search" method="get">
-    <label class="u-visually-hidden" for="search-box">Search:</label>
-    <input type="text" id="search-box" class="a-text-input" name="searchQuery" placeholder="Enter your query">
-    <button class="a-btn" type="submit">Search</button>
+    <cfpb-form-search id="search-box" form="search-form" name="searchQuery">
+        <ul>
+            <li><a href="/design-system/components/alerts">Alerts</a></li>
+            <li><a href="/design-system/components/banner-notification">Banner (notification)</a></li>
+            <li><a href="/design-system/components/banner-us-gov">Banner (US gov)</a></li>
+            <li><a href="/design-system/components/buttons">Buttons</a></li>
+            <li><a href="/design-system/components/checkboxes">Checkboxes</a></li>
+            <li><a href="/design-system/components/date-picker">Date picker</a></li>
+            <li><a href="/design-system/components/expandables">Expandables</a></li>
+            <li><a href="/design-system/components/fieldsets">Fieldsets</a></li>
+            <li><a href="/design-system/components/helper-text">Helper text</a></li>
+            <li><a href="/design-system/components/labels-and-legends">Labels and legends</a></li>
+            <li><a href="/design-system/components/links">Links</a></li>
+            <li><a href="/design-system/components/lists">Lists</a></li>
+            <li><a href="/design-system/components/pagination">Pagination</a></li>
+            <li><a href="/design-system/components/radio-buttons">Radio buttons</a></li>
+            <li><a href="/design-system/components/range-sliders">Range sliders</a></li>
+            <li><a href="/design-system/components/selects">Selects</a></li>
+            <li><a href="/design-system/components/summaries">Summaries</a></li>
+            <li><a href="/design-system/components/tables">Tables</a></li>
+            <li><a href="/design-system/components/tags">Tags</a></li>
+            <li><a href="/design-system/components/taglines">Taglines</a></li>
+            <li><a href="/design-system/components/text-inputs">Text inputs</a></li>
+            <li><a href="/design-system/components/tooltips">Tooltips</a></li>
+            <li><a href="/design-system/components/elements">Web Components</a></li>
+        </ul>
+    </cfpb-form-search>
 </form>
 
 
@@ -211,6 +235,20 @@
                     
                 </div>
                 
+                    <div class="ds-nav ds-nav-2">
+                        <div class="h5">Web Components (beta)</div>
+                        
+                        <ul class="m-list m-list--links">
+                        
+                            <li class="m-list__item">
+                                <a class="a-link a-link--jump" href="/design-system/components/elements">Elements</a>
+                            </li>
+                        
+                        </ul>
+                    
+                    
+                </div>
+                
             
             </div>
         </li>
@@ -314,6 +352,8 @@
     
 
     
+
+    
     
     <section class="o-variation-group" id="types">
 
@@ -354,42 +394,7 @@
             <div class="a-live__code">
                 <div class="m-form-field m-form-field--radio">
     <input class="a-radio" type="radio" id="test_radio_basic_default">
-    <label class="a-label" for="test_radio_basic_default">Enabled</label>
-</div>
-
-<br>
-<!--Hover-->
-<div class="m-form-field m-form-field--radio">
-    <input class="a-radio hover" type="radio" id="test_radio_basic_hover">
-    <label class="a-label" for="test_radio_basic_hover">Hover</label>
-</div>
-<br>
-
-<!--Focus-->
-<div class="m-form-field m-form-field--radio">
-    <input class="a-radio focus" type="radio" id="test_radio_basic_focus">
-    <label class="a-label" for="test_radio_basic_focus">Focus</label>
-</div>
-<br>
-
-<!--Selected-->
-<div class="m-form-field m-form-field--radio">
-    <input class="a-radio" type="radio" id="test_radio_basic_checked" checked>
-    <label class="a-label" for="test_radio_basic_checked">Selected</label>
-</div>
-<br>
-
-<!--Disabled-->
-<div class="m-form-field m-form-field--radio">
-    <input class="a-radio" type="radio" id="test_radio_basic_disabled" disabled>
-    <label class="a-label" for="test_radio_basic_disabled">Disabled</label>
-</div>
-<br>
-
-<!--Disabled/selected-->
-<div class="m-form-field m-form-field--radio">
-    <input class="a-radio" type="radio" id="test_radio_basic_disabled_selected" disabled checked>
-    <label class="a-label" for="test_radio_basic_disabled_selected">Disabled/selected</label>
+    <label class="a-label" for="test_radio_basic_default">Default</label>
 </div>
 
             </div>
@@ -429,46 +434,7 @@
                         <div class="source-code">
                             <pre><code class="language-html">&lt;div class="m-form-field m-form-field--radio"&gt;
     &lt;input class="a-radio" type="radio" id="test_radio_basic_default"&gt;
-    &lt;label class="a-label" for="test_radio_basic_default"&gt;Enabled&lt;/label&gt;
-&lt;/div&gt;
-
-&lt;br&gt;
-&lt;!--Hover--&gt;
-&lt;div class="m-form-field m-form-field--radio"&gt;
-    &lt;input class="a-radio hover" type="radio" id="test_radio_basic_hover"&gt;
-    &lt;label class="a-label" for="test_radio_basic_hover"&gt;Hover&lt;/label&gt;
-&lt;/div&gt;
-&lt;br&gt;
-
-&lt;!--Focus--&gt;
-&lt;div class="m-form-field m-form-field--radio"&gt;
-    &lt;input class="a-radio focus" type="radio" id="test_radio_basic_focus"&gt;
-    &lt;label class="a-label" for="test_radio_basic_focus"&gt;Focus&lt;/label&gt;
-&lt;/div&gt;
-&lt;br&gt;
-
-&lt;!--Selected--&gt;
-&lt;div class="m-form-field m-form-field--radio"&gt;
-    &lt;input class="a-radio" type="radio" id="test_radio_basic_checked" checked&gt;
-    &lt;label class="a-label" for="test_radio_basic_checked"&gt;Selected&lt;/label&gt;
-&lt;/div&gt;
-&lt;br&gt;
-
-&lt;!--Disabled--&gt;
-&lt;div class="m-form-field m-form-field--radio"&gt;
-    &lt;input class="a-radio" type="radio" id="test_radio_basic_disabled" disabled&gt;
-    &lt;label class="a-label" for="test_radio_basic_disabled"&gt;Disabled&lt;/label&gt;
-&lt;/div&gt;
-&lt;br&gt;
-
-&lt;!--Disabled/selected--&gt;
-&lt;div class="m-form-field m-form-field--radio"&gt;
-    &lt;input class="a-radio"
-           type="radio"
-           id="test_radio_basic_disabled_selected"
-           disabled
-           checked&gt;
-    &lt;label class="a-label" for="test_radio_basic_disabled_selected"&gt;Disabled/selected&lt;/label&gt;
+    &lt;label class="a-label" for="test_radio_basic_default"&gt;Default&lt;/label&gt;
 &lt;/div&gt;</code></pre>
                         </div>
                     </div>
@@ -615,43 +581,7 @@
             <div class="a-live__code">
                 <div class="m-form-field m-form-field--radio m-form-field--lg-target">
     <input class="a-radio" type="radio" id="test_radio_lg_default">
-    <label class="a-label" for="test_radio_lg_default">Enabled</label>
-</div>
-<br>
-
-<!--Hover-->
-<div class="m-form-field m-form-field--radio m-form-field--lg-target">
-    <input class="a-radio hover" type="radio" id="test_radio_lg_hover">
-    <label class="a-label" for="test_radio_lg_hover">Hover</label>
-</div>
-<br>
-
-<!--Focus-->
-<div class="m-form-field m-form-field--radio m-form-field--lg-target">
-    <input class="a-radio focus" type="radio" id="test_radio_lg_focus">
-    <label class="a-label" for="test_radio_lg_focus">Focus</label>
-</div>
-<br>
-
-<!--Selected-->
-
-<div class="m-form-field m-form-field--radio m-form-field--lg-target">
-    <input class="a-radio" type="radio" id="test_radio_lg_checked" checked>
-    <label class="a-label" for="test_radio_lg_checked">Selected</label>
-</div>
-<br>
-
-<!--Disabled-->
-<div class="m-form-field m-form-field--radio m-form-field--lg-target">
-    <input class="a-radio" type="radio" id="test_radio_lg_disabled" disabled>
-    <label class="a-label" for="test_radio_lg_disabled">Disabled</label>
-</div>
-<br>
-
-<!--Disabled/selected-->
-<div class="m-form-field m-form-field--radio m-form-field--lg-target">
-    <input class="a-radio" type="radio" id="test_radio_lg_disabled_selected" disabled checked>
-    <label class="a-label" for="test_radio_lg_disabled_selected">Disabled/selected</label>
+    <label class="a-label" for="test_radio_lg_default">Default</label>
 </div>
             </div>
             
@@ -690,47 +620,7 @@
                         <div class="source-code">
                             <pre><code class="language-html">&lt;div class="m-form-field m-form-field--radio m-form-field--lg-target"&gt;
     &lt;input class="a-radio" type="radio" id="test_radio_lg_default"&gt;
-    &lt;label class="a-label" for="test_radio_lg_default"&gt;Enabled&lt;/label&gt;
-&lt;/div&gt;
-&lt;br&gt;
-
-&lt;!--Hover--&gt;
-&lt;div class="m-form-field m-form-field--radio m-form-field--lg-target"&gt;
-    &lt;input class="a-radio hover" type="radio" id="test_radio_lg_hover"&gt;
-    &lt;label class="a-label" for="test_radio_lg_hover"&gt;Hover&lt;/label&gt;
-&lt;/div&gt;
-&lt;br&gt;
-
-&lt;!--Focus--&gt;
-&lt;div class="m-form-field m-form-field--radio m-form-field--lg-target"&gt;
-    &lt;input class="a-radio focus" type="radio" id="test_radio_lg_focus"&gt;
-    &lt;label class="a-label" for="test_radio_lg_focus"&gt;Focus&lt;/label&gt;
-&lt;/div&gt;
-&lt;br&gt;
-
-&lt;!--Selected--&gt;
-
-&lt;div class="m-form-field m-form-field--radio m-form-field--lg-target"&gt;
-    &lt;input class="a-radio" type="radio" id="test_radio_lg_checked" checked&gt;
-    &lt;label class="a-label" for="test_radio_lg_checked"&gt;Selected&lt;/label&gt;
-&lt;/div&gt;
-&lt;br&gt;
-
-&lt;!--Disabled--&gt;
-&lt;div class="m-form-field m-form-field--radio m-form-field--lg-target"&gt;
-    &lt;input class="a-radio" type="radio" id="test_radio_lg_disabled" disabled&gt;
-    &lt;label class="a-label" for="test_radio_lg_disabled"&gt;Disabled&lt;/label&gt;
-&lt;/div&gt;
-&lt;br&gt;
-
-&lt;!--Disabled/selected--&gt;
-&lt;div class="m-form-field m-form-field--radio m-form-field--lg-target"&gt;
-    &lt;input class="a-radio"
-           type="radio"
-           id="test_radio_lg_disabled_selected"
-           disabled
-           checked&gt;
-    &lt;label class="a-label" for="test_radio_lg_disabled_selected"&gt;Disabled/selected&lt;/label&gt;
+    &lt;label class="a-label" for="test_radio_lg_default"&gt;Default&lt;/label&gt;
 &lt;/div&gt;</code></pre>
                         </div>
                     </div>
@@ -900,7 +790,7 @@ Label
             <div class="content-l__col content-l__col-1">
                 <div>
                     <section>
-                        <h2 id="latest-updates">Latest Updates</h2>
+                        <h2 id="latest-updates">Latest updates</h2>
                         <div class="content__line--wide content__line u-mb20"></div>
                         <strong>Page last edited:</strong>
                         
@@ -908,8 +798,8 @@ Label
                         
                         
                         <a href="https://github.com/cfpb/design-system/commits/main/docs/pages/radio-buttons.md">
-                            <time datetime="2025-01-24 16:12:37 -0500">
-                                 4:12:37 PM Jan 24, 2025
+                            <time datetime="2026-03-11 15:03:24 -0400">
+                                 3:03:24 PM Mar 11, 2026
                             </time>
                         </a>
                     </section>
@@ -949,22 +839,20 @@ Label
 
     <div class="block block--sub ds-footer__content">
         <p>
-            <small>
-                We need your help keeping the Design System accurate and up-to-date!
-                If you see something wrong or missing,
-                <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
-                If you can’t make those changes yourself,
-                <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Radio%20buttons%3A+Add+issue+description">file an issue</a>.
-                If you have a substantial change to an existing page, or a new standard you want to add,
-                <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
-            </small>
+            We need your help keeping the Design System accurate and up-to-date!
+            If you see something wrong or missing,
+            <a href="/design-system/updating-this-website/#editing-pages">edit the page</a>.
+            If you can’t make those changes yourself,
+            <a href="https://github.com/cfpb/design-system/issues/new?assignees=&amp;labels=content&amp;template=content_issues.md&amp;title=Radio%20buttons%3A+Add+issue+description">file an issue</a>.
+            If you have a substantial change to an existing page, or a new standard you want to add,
+            <a href="/design-system/updating-this-website/#creating-new-pages">follow these guidelines</a>.
         </p>
     </div>
 
 </footer>
 
   
-  <script src="/design-system/dist/main.js" charset="utf-8"></script>
+  <script type="module" src="/design-system/dist/main.js" charset="utf-8"></script>
 
   
 
