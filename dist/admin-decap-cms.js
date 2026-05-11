@@ -2481,8 +2481,8 @@ Please report this to https://github.com/markedjs/marked.`,u){let u=`<p>An error
             {% assign variation_slug = variation_slug | strip | slugify | truncate: 40, '' %}
 
             <div class="a-toggle__code">
-                <button href="#{{ variation_slug }}-{{ forloop.index }}" class="a-btn a-btn--link" data-toggle-details="show">Show details</button>
-                <button href="#{{ variation_slug }}-{{ forloop.index }}" class="a-btn a-btn--link u-hidden" data-toggle-details="hide">Hide details</button>
+                <cfpb-button href="#{{ variation_slug }}-{{ forloop.index }}" style-as-link data-toggle-details="show">SHOW DETAILS</cfpb-button>
+                <cfpb-button href="#{{ variation_slug }}-{{ forloop.index }}" style-as-link class="u-hidden" data-toggle-details="hide">HIDE DETAILS</cfpb-button>
             </div>
 
             <div class="m-tabs u-hidden" id="{{ variation_slug }}-{{ forloop.index }}">
