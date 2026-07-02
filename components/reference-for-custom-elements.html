@@ -2409,7 +2409,7 @@
     }
     tag.innerHTML = tagName.value;
     const index = tagIndex.value === '' ? -1 : Number(tagIndex.value);
-    tagGroup.addTag(tag, index);
+    tagGroup.addItem(tag, index);
   });
 
   btnRemove.addEventListener('click',()=>{
@@ -2418,7 +2418,7 @@
     tags.forEach((item) => {
       if (item.textContent.trim() === tagName.value) tag = item;
     });
-    tagGroup.removeTag(tag);
+    tagGroup.removeItem(tag);
   });
 
   btnAddJson.addEventListener('click',()=>{
@@ -3812,8 +3812,8 @@
                         
                         
                         <a href="https://github.com/cfpb/design-system/commits/main/docs/pages/reference-for-custom-elements.md">
-                            <time datetime="2026-06-30 12:56:44 -0400">
-                                12:56:44 PM Jun 30, 2026
+                            <time datetime="2026-07-01 17:21:56 -0400">
+                                 5:21:56 PM Jul 01, 2026
                             </time>
                         </a>
                     </section>
